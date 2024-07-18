@@ -1,0 +1,36 @@
+site_url : https://asalvadorc.github.io/BBDD_Tema3
+site_name: BD - Bases de Dades
+theme: 
+  name: readthedocs
+  logo: assets/logocaminas.png
+nav:
+  - Tema 3 Model Relacional:
+    - Objectius i coneixements previs: BD-T03_Model_Relacional/objectius_i_coneixements_previs.md
+    - 1. Introducció: BD-T03_Model_Relacional/1_introducci.md
+    - 2. Estructura del Model Relacional: BD-T03_Model_Relacional/2_estructura_del_model_relacional.md
+    - 3. Restriccions:
+      - 3. Restriccions: BD-T03_Model_Relacional/3_restriccions.md
+      - 3.1 Restriccions inherents: BD-T03_Model_Relacional/31_restriccions_inherents.md
+      - 3.2 Restriccions d'usuari:
+        - 3.2 Restriccions d'usuari: BD-T03_Model_Relacional/32_restriccions_dusuari.md
+        - 3.2.1 Restricció de domini: BD-T03_Model_Relacional/321_restricci_de_domini.md
+        - 3.2.2 Restricció de clau principal: BD-T03_Model_Relacional/322_restricci_de_clau_principal.md
+        - 3.2.3 Restricció d'unicitat: BD-T03_Model_Relacional/323_restricci_dunicitat.md
+        - 3.2.4 Restricció de valor no nul: BD-T03_Model_Relacional/324_restricci_de_valor_no_nul.md
+        - 3.2.5 Integritat referencial: BD-T03_Model_Relacional/325_integritat_referencial.md
+        - 3.2.6 Restriccions externes: BD-T03_Model_Relacional/326_restriccions_externes.md
+    - 4. Tranformació del M. E/R al M. Relacional:
+      - 4. Tranformació del M. E/R al M. Relacional: BD-T03_Model_Relacional/4_tranformaci_del_m_er_al_m_relacional.md
+      - 4.1 Entitats: BD-T03_Model_Relacional/41_entitats.md
+      - 4.2 Relacions 1:N: BD-T03_Model_Relacional/42_relacions_1n.md
+      - 4.3 Relacions M:N: BD-T03_Model_Relacional/43_relacions_mn.md
+      - 4.4 Relacions 1:1: BD-T03_Model_Relacional/44_relacions_11.md
+      - 4.5 Entitats dèbils: BD-T03_Model_Relacional/45_entitats_dbils.md
+      - 4.6 Resum dependències: BD-T03_Model_Relacional/46_resum_dependncies.md
+      - 4.7 Relacions ternàries: BD-T03_Model_Relacional/47_relacions_ternries.md
+      - 4.8 Especialitzacions: BD-T03_Model_Relacional/48_especialitzacions.md
+      - 4.9 Restriccions externes: BD-T03_Model_Relacional/49_restriccions_externes.md
+      - 4.10 Exemple: BD-T03_Model_Relacional/410_exemple.md
+    - 5. Llenguatges relacionals: BD-T03_Model_Relacional/5_llenguatges_relacionals.md
+    - 6. Exercicis: BD-T03_Model_Relacional/6_exercicis.md
+    - Auto-avaluació: BD-T03_Model_Relacional/autoavaluaci.md
