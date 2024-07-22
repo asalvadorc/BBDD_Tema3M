@@ -26,7 +26,6 @@ Recordeu que les **relacions** del Model Relacional són les **taules**. No són
 
 <a name="_ftn1"></a>[\[1\]](../SGBD-T03%282008%29Model%20Relacional/#_ftnref1 "_ftn1") En realitat tant la independència física com lògica les han intentades aconseguir tots els models. 
 
-[« Anterior](objectius_i_coneixements_previs.md) | [Següent »](2_estructura_del_model_relacional.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

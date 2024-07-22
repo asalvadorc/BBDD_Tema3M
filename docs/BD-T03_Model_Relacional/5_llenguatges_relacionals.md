@@ -41,7 +41,6 @@ El **QBE** (Query By Example) es basa en el càlcul relacional, i la seua partic
 
 ![](5_llenguatges_relacionals.002.png)
 
-[« Anterior](410_exemple.md) | [Següent »](6_exercicis.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

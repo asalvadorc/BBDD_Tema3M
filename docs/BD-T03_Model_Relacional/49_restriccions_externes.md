@@ -47,9 +47,6 @@ En el nostre exemple tindrem les restriccions externes al Model Relacional:
 **RexR3**: Tot projecte ha de tenir com a mínim un empleat treballant-hi. 
 
 
-
-[« Anterior](48_especialitzacions.md) | [Següent »](410_exemple.md)
-
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
 

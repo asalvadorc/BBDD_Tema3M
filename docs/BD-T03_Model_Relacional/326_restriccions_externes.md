@@ -11,7 +11,6 @@ En **Access** dues seran les ferramentes per a fer açò, les **Macros** i proce
 
 En **Base** de **Libreoffice** només tenim les **Macros**, però no seran com les d'Access amb accions predeterminades, sinó directament procediments en LibreOffice Basic
 
-[« Anterior](325_integritat_referencial.md) | [Següent »](4_tranformaci_del_m_er_al_m_relacional.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

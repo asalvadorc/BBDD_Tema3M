@@ -23,7 +23,6 @@ Els coneixements previs necessaris per al tema són els del tema 2: Model Entita
 
 Però entendre el Model Entitat-Relació i dominar la interpretació d'un esquema serà bàsic en el disseny d'una Base de Dades. Sempre començarem pel Model Entitat-Relació, i posteriorment el traduirem al Model Relacional, aplicant en tot cas el sentit comú. 
 
-[« Anterior](index.md) | [Següent »](1_introducci.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

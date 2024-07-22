@@ -25,7 +25,6 @@ Com que la relació és de tipus 1:N la traduirem per una clau externa en CARTES
 
 ![ref4]
 
-[« Anterior](45_entitats_dbils.md) | [Següent »](47_relacions_ternries.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

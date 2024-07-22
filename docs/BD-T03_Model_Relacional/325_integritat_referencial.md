@@ -60,8 +60,6 @@ I aquest seria la manera de fer-ho en **Base de LibreOffice**, totalment paral·
 
 
 
-[« Anterior](324_restricci_de_valor_no_nul.md) | [Següent »](326_restriccions_externes.md)
-
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
 

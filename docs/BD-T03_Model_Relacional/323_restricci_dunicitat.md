@@ -26,7 +26,6 @@ Haurem crear un nou índex, el camp pel qual volem l'índex, l'ordre que ens int
 
 En aquesta imatge es veu com pel fet d'haver creat la clau principal, ja s'havia creat un índex, en la imatge **SYS\_IDX\_46**. No es tracta de modificar aquest, sinó crear-ne un nou.
 
-[« Anterior](322_restricci_de_clau_principal.md) | [Següent »](324_restricci_de_valor_no_nul.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

@@ -51,7 +51,6 @@ Però com comentàvem al principi, haurem d'aplicar el sentit comú, ja que pots
 
 Resumint, **una relació 1:1 quasi sempre la traduirem com una clau externa en la taula que participa en la relació de forma total o quasi total** (o la que previsiblement té més ocurrències en la relació) 
 
-[« Anterior](43_relacions_mn.md) | [Següent »](45_entitats_dbils.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

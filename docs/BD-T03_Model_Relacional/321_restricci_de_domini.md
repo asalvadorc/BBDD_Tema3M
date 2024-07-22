@@ -50,7 +50,6 @@ La següent imatge mostra com es faria en **Access** la primera regla de validac
 
 En Base de LibreOffice resulta més complicada la creació de regles de validació. S'ha de fer per mig de Macros associades a formularis
 
-[« Anterior](32_restriccions_dusuari.md) | [Següent »](322_restricci_de_clau_principal.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 **Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**

@@ -160,10 +160,9 @@ Fer l'esquema E/R i posteriorment passar-lo a relacional corresponent a un Parc 
   - Guies: Interessa saber quins guies porten cada itinerari, tenint en compte que un guia pot dur uns quants itineraris i que un itinerari pot ser assignat a més d'un guia en diferents hores. Aquestes hores són una dada d'interès. 
   - Cuidadors: s'encarreguen de cuidar les diferents espècies. Un cuidador pot encarregar-se d'unes quantes espècies i una espècie pot ser atesa per uns quants cuidadores. Ens interessa la data en la qual un cuidador es fa càrrec d'una espècie. 
 
-[« Anterior](5_llenguatges_relacionals.md) | [Següent »](autoavaluaci.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
+
 
 [ref1]: 6_exercicis.002.png
 [ref2]: 6_exercicis.003.png
