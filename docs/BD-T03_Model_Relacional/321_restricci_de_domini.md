@@ -38,13 +38,13 @@ a banda de la mencionada anteriorment.
 
 Si utilitzem la manera de representar alternativa, ho tindríem així:
 
-![ref1]
+![ref1](T3_3_2_1_0.png)
 
 
 
 La següent imatge mostra com es faria en **Access** la primera regla de validació, aplicada al camp **data\_n**
 
-![ref2]
+![ref2](T3_3_2_1.png)
 
 **Nota**
 
@@ -52,7 +52,3 @@ En Base de LibreOffice resulta més complicada la creació de regles de validaci
 
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
-
-[ref1]: 321_restricci_de_domini.002.png
-[ref2]: 321_restricci_de_domini.003.png

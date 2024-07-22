@@ -12,7 +12,7 @@ Els objectius del Model Relacional són:
 
 - **Fidelitat**, per a originar esquemes que representen fidelment la informació (els objectes i relacions entre ells) que existeix en el domini del problema.
 
-- **Independència física**[1][^1], per a que la manera de guardar les dades no influesca en la seua manipulació lògica, i així els usuaris que accedeixen a aquestes dades no hagen de modificar els seus programes per canvis en l'emmagatzematge físic.
+- **Independència física**, per a que la manera de guardar les dades no influesca en la seua manipulació lògica, i així els usuaris que accedeixen a aquestes dades no hagen de modificar els seus programes per canvis en l'emmagatzematge físic.
 
 - **Independència lògica**, per a que les vistes externes no es vegen afectades per canvis en l'esquema conceptual de la B.D.
 
@@ -24,10 +24,5 @@ Els objectius del Model Relacional són:
 
 Recordeu que les **relacions** del Model Relacional són les **taules**. No són el mateix que les relacions del Model Entitat-Relació. Per evitar confusions intentarem anomenar-les sempre taules. -----
 
-<a name="_ftn1"></a>[\[1\]](../SGBD-T03%282008%29Model%20Relacional/#_ftnref1 "_ftn1") En realitat tant la independència física com lògica les han intentades aconseguir tots els models. 
-
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
-
-[^1]: 

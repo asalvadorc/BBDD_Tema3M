@@ -14,22 +14,17 @@ EMPLEAT (dni, nom, adreca, telefon, sou, data\_n)
 
 P er mig de la representació alternativa, podem marcar amb un punt negre davant del camp no nul.
 
-![ref1]
+![ref1](T3_3_2_4_0.png)
 
 
 
 En Access la manera de posar un camp com a **NOT NULL** serà posar en l'apartat ***Requerido*** el valor ***Sí***
 
-![ref2]
+![ref2](T3_3_2_4.png)
 
 En **Base** de **LibreOffice** haurem de posar **Sí** a l'apartat **Es necessita una entrada**
 
-![ref3]
+![ref3](T03_3_2_4_2.png)
 
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
-
-[ref1]: 324_restricci_de_valor_no_nul.002.png
-[ref2]: 324_restricci_de_valor_no_nul.003.png
-[ref3]: 324_restricci_de_valor_no_nul.004.png

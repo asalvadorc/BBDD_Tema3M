@@ -3,7 +3,7 @@ Bases de Dades
 
 # <a name="main"></a>**2. Estructura del model relacional**
 
-![ref1]
+![ref1](T3_2_1_2.png)
 
 
 
@@ -49,12 +49,7 @@ EMPLEAT (dni, nom, adreca, telefon, sou, data\_n)
 
 També podem utilitzar una forma alternativa de representar-la, amb un requadre que agafa tota la taula, dalt el nom de la taula, i baix cadascun dels camps, posant la clau principal en negreta o subratllada.
 
-![ref2]
-
+![ref2](T3_2_2.png)
 
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
-
-[ref1]: 2_estructura_del_model_relacional.002.png
-[ref2]: 2_estructura_del_model_relacional.003.png

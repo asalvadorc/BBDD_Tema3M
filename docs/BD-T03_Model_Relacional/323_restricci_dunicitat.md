@@ -16,20 +16,16 @@ EMPLEAT (dni, nom, adreca, telefon, sou, data\_n)
 
 En **Access** la restricció d'unicitat (**UNIQUE**)** es defineix posant en l'apartat ***Indexado*** el valor ***Sí (sin duplicados)***. En la figura es mostra com fer que el camp **nom** de la taula **EMPLEAT** siga únic.
 
-![ref1]
+![ref1](T3_3_2_3.png)
 
 En **Base** de **LibreOffice** es fa creant un índex, en el símbol   ![ref2]
 
 Haurem crear un nou índex, el camp pel qual volem l'índex, l'ordre que ens interessa (normalment ascendent) i **deixar activa la casella Únic**
 
-![ref3]
+![ref3](T03_3_2_3_3.png)
 
 En aquesta imatge es veu com pel fet d'haver creat la clau principal, ja s'havia creat un índex, en la imatge **SYS\_IDX\_46**. No es tracta de modificar aquest, sinó crear-ne un nou.
 
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
 
-[ref1]: 323_restricci_dunicitat.002.png
-[ref2]: 323_restricci_dunicitat.003.png
-[ref3]: 323_restricci_dunicitat.004.png

@@ -14,15 +14,10 @@ No és convenient que la clau principal estiga formada per un número excessiu d
 
 En **Access** es marca la clau principal amb una figura d'una clau. En la figura es veu com fer que el camp **dni** siga la clau principal de la taula **EMPLEAT**:
 
-![ref1]
+![ref1](T3_3_2_2.png)
 
 En **LibreOffice Base** es fa de la mateixa manera:
 
-![ref2]
-
+![ref2](T03_3_2_2_2.png)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-**Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/**
-
-[ref1]: 322_restricci_de_clau_principal.002.png
-[ref2]: 322_restricci_de_clau_principal.003.png
