@@ -31,7 +31,7 @@ L'**ESTAT DE LA RELACIÓ** és la informació que conté en un determinat moment
 
 
 
-Una **CLAU CANDIDATA** és un atribut o conjunt d'atributs que identifiquen unívocament cada tupla de la relació. En l'exemple podrien ser claus candidates **Dni**, **Nom**, fins i tot ens podríem plantejar combinacions, com el conjunt **(Nom, Data\_n)**, ja que sembla impossible que dues persones de l'empresa es diguen igual i damunt hagen nascut el mateix dia. De entre totes les claus candidates en triarem una, que serà la **CLAU PRINCIPAL** o **CLAU PRIMÀRIA**, i servirà per a identificar de forma efectiva en el Model cadascuna de les tuples.
+Una **CLAU CANDIDATA** és un atribut o conjunt d'atributs que identifiquen unívocament cada tupla de la relació. En l'exemple podrien ser claus candidates **Dni**, **Nom**, fins i tot ens podríem plantejar combinacions, com el conjunt **(Nom, Data_n)**, ja que sembla impossible que dues persones de l'empresa es diguen igual i damunt hagen nascut el mateix dia. De entre totes les claus candidates en triarem una, que serà la **CLAU PRINCIPAL** o **CLAU PRIMÀRIA**, i servirà per a identificar de forma efectiva en el Model cadascuna de les tuples.
 
 
 
@@ -45,7 +45,7 @@ Per últim, les relacions o taules poden ser **PERMANENTS** o **TEMPORALS**. Les
 
 Representarem la taula amb el nom de la taula en majúscules seguit, entre parèntesis, en minúscules i separats per comes, pels noms dels camps, amb la clau principal subratllada. També és convenient fugir dels caràcters especials (vocals accentuades, ç, ñ, guionet, ...) per no tenir problemes quan anem a implementar-la en un SGBD determinat (Access, Oracle, PostgreSQL, ...). Per a una millor lectura intentarem posar sempre la clau principal al principi, el o els primers camps.
 
-EMPLEAT (dni, nom, adreca, telefon, sou, data\_n)
+EMPLEAT (dni, nom, adreca, telefon, sou, data_n)
 
 També podem utilitzar una forma alternativa de representar-la, amb un requadre que agafa tota la taula, dalt el nom de la taula, i baix cadascun dels camps, posant la clau principal en negreta o subratllada.
 

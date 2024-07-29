@@ -12,7 +12,7 @@ També es podran definir dominis que estiguen en un determinat interval (nota d'
 
 Es poden definir regles de verificació o validació (**CHECK**) que ens ajuden a perfilar molt bé el domini. Aquest seria un exemple d'exigir que el treballador tinga de 18 a 65 anys. La sintaxi és inventada, només per a entendre-ho, amb una hipotètica funció que trau l'any, i una altra que ens dóna la data d'avui.
 
-CHECK ( Any(avui - data\_n) >= 18) and (Any(avui - data\_n) < 65) )
+CHECK ( Any(avui - data_n) >= 18) and (Any(avui - data_n) < 65) )
 
 
 
@@ -20,7 +20,7 @@ CHECK ( Any(avui - data\_n) >= 18) and (Any(avui - data\_n) < 65) )
 
 En **Access** la regla de validació seria:
 
-AgregFecha("aaaa";18;[data\_n])<=Ahora() Y AgregFecha("aaaa";65;[data\_n])>=Ahora()
+AgregFecha("aaaa";18;[data_n])<=Ahora() Y AgregFecha("aaaa";65;[data_n])>=Ahora()
 
 on es veu que la fórmula és afegir 18 anys a la data de naixement i comprovar que no supera la data d'avui; i afegir 65 anys a la data de naixement i comprovar que sí supera la data d'avui.
 
@@ -28,7 +28,7 @@ on es veu que la fórmula és afegir 18 anys a la data de naixement i comprovar 
 
 Per exemple, **Empleat** podria quedar:
 
-EMPLEAT (dni:caràcter(10), nom:caràcter(30), adreca:caràcter(30), telefon:enter(9), sou:numèric(6,2), data\_n:data)
+EMPLEAT (dni:caràcter(10), nom:caràcter(30), adreca:caràcter(30), telefon:enter(9), sou:numèric(6,2), data_n:data)
 
 amb la regla de validació:
 
@@ -42,7 +42,7 @@ Si utilitzem la manera de representar alternativa, ho tindríem així:
 
 
 
-La següent imatge mostra com es faria en **Access** la primera regla de validació, aplicada al camp **data\_n**
+La següent imatge mostra com es faria en **Access** la primera regla de validació, aplicada al camp **data_n**
 
 ![ref2](T3_3_2_1.png)
 

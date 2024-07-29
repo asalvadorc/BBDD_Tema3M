@@ -18,7 +18,7 @@ on estem projectant sobre els camps dni, nom i sou, i seleccionant les files que
 
 Anem a comentar dues de les operacions esmentades abans. El **producte cartesià** de dues taules consisteix en combinar cadascuna de les files d'una taula amb cadascuna de les files de l'altra. Així, el producte cartesià de **Empleat** i **Departament** seria:
 
-SELECT dni, nom, nom\_d 
+SELECT dni, nom, nom_d 
 FROM EMPLEAT , DEPARTAMENT
 
 
@@ -27,11 +27,11 @@ Però aquest operació no sembla tenir molt de sentit en aquest cas ¿per a què
 
 La **reunió** de dues taules consisteix en fer un producte cartesià i després seleccionar les files que tenen el mateix valor en dos camps determinats (un de cada taula).
 
-SELECT dni, nom, nom\_d 
+SELECT dni, nom, nom_d 
 FROM EMPLEAT , DEPARTAMENT 
-WHERE EMPLEAT.departament = DEPARTAMENT.num\_d
+WHERE EMPLEAT.departament = DEPARTAMENT.num_d
 
-És a dir, del producte cartesià seleccionem només les files en les quals coincideixen els camp departament i num\_d, combinant cada empleat amb el seu departament.
+És a dir, del producte cartesià seleccionem només les files en les quals coincideixen els camp departament i num_d, combinant cada empleat amb el seu departament.
 
 
 

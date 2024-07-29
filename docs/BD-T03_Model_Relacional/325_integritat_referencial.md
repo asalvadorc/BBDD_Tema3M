@@ -11,7 +11,7 @@ que es podria traduir en les següents taules:
 
 
 
-Si en una taula R2 (**Familiar**) tenim un atribut (**dni\_emp**) que és clau (primària o candidata) d'una altra taula R1 (**Empleat --> dni**), tot valor d'aquell atribut ha de concordar amb un valor de la clau de R1 (no he de poder posar en familiar un Dni que no el tinga cap empleat de l'empresa). L'atribut en R2 és, per tant, una **CLAU EXTERNA**.
+Si en una taula R2 (**Familiar**) tenim un atribut (**dni_emp**) que és clau (primària o candidata) d'una altra taula R1 (**Empleat --> dni**), tot valor d'aquell atribut ha de concordar amb un valor de la clau de R1 (no he de poder posar en familiar un Dni que no el tinga cap empleat de l'empresa). L'atribut en R2 és, per tant, una **CLAU EXTERNA**.
 
 Ha de ser impossible posar en **Familiar** el Dni 18.754.321, perquè no està en l'altra, i per tant no és un Dni d'un empleat de l'empresa.
 

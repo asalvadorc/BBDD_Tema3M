@@ -15,7 +15,7 @@ Com que l'entitat de la dreta participa de forma total, triarem **DEPARTAMENT**:
 
 ![ref2] 
 
-Ho fem d'aquesta manera perquè tots els departaments tenen director, però no tots els empleats són directors. Si posàrem la clau externa en la taula **EMPLEAT** (s'anomenaria per exemple **dep\_que\_dirigeix**) moltes vegades estaria buit, ja que relativament són pocs els empleats que dirigeixen un departament. 
+Ho fem d'aquesta manera perquè tots els departaments tenen director, però no tots els empleats són directors. Si posàrem la clau externa en la taula **EMPLEAT** (s'anomenaria per exemple **dep_que_dirigeix**) moltes vegades estaria buit, ja que relativament són pocs els empleats que dirigeixen un departament. 
 
 Vegem un altre exemple de relació 1:1, el de les papallones. Teníem una relació 1:1 entre **PERSONA** i **COL·LECCIÓ**
 

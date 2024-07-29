@@ -8,7 +8,7 @@ Si en un camp, o en un conjunt de camps, definim la restricció d'unicitat (**UN
 
 Representarem que un camp és únic, posant **únic** entre parèntesi baix del camp. Per exemple, si considerem que el camp nom de la taula EMPLEAT ha de ser únic, ho representarem així:
 
-EMPLEAT (dni, nom, adreca, telefon, sou, data\_n) 
+EMPLEAT (dni, nom, adreca, telefon, sou, data_n) 
 
 (únic)
 
@@ -24,7 +24,7 @@ Haurem crear un nou índex, el camp pel qual volem l'índex, l'ordre que ens int
 
 ![ref3](T03_3_2_3_3.png)
 
-En aquesta imatge es veu com pel fet d'haver creat la clau principal, ja s'havia creat un índex, en la imatge **SYS\_IDX\_46**. No es tracta de modificar aquest, sinó crear-ne un nou.
+En aquesta imatge es veu com pel fet d'haver creat la clau principal, ja s'havia creat un índex, en la imatge **SYS_IDX_46**. No es tracta de modificar aquest, sinó crear-ne un nou.
 
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)

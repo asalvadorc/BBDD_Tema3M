@@ -18,7 +18,7 @@ En l'exemple nostre:
 - Per la relació **Pertany** (figura de dalt) inclourem l'atribut **departament** a **Empleat**, que a més haurà de ser no nul.
 - Per la relació **Controla** inclourem l'atribut **departament** a **Projecte** (no nul).
 - Per la relació **Supervisa** inclourem l'atribut **supervisor** a **Empleat** (és reflexiva), però aquest sí que pot ser nul. Encara que semble estrany, un camp pot ser clau externa que apunta a la clau principal de la mateixa taula.
-- Per la relació **Té** entre empleat i familiar, inclourem en **FAMILIAR** l'atribut **dni\_e**, però com que Familiar és dèbil la veurem millor un poc més endavant.
+- Per la relació **Té** entre empleat i familiar, inclourem en **FAMILIAR** l'atribut **dni_e**, però com que Familiar és dèbil la veurem millor un poc més endavant.
 
 ![ref2]
 

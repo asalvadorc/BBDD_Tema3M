@@ -18,7 +18,7 @@ Però suposem que la resposta és que sí que pot treballar més d'una vegada al
 ![ref2]
 
 
-Aleshores, com no és suficient amb la clau principal formada per les dues claus externes, inclourem un altre camp en la clau principal. Sembla que el més adequat seria **Data\_c** (ja no es pot donar el cas que el mateix treballador treballe més d'una vegada en el mateix projecte, començant el mateix dia)
+Aleshores, com no és suficient amb la clau principal formada per les dues claus externes, inclourem un altre camp en la clau principal. Sembla que el més adequat seria **Data_c** (ja no es pot donar el cas que el mateix treballador treballe més d'una vegada en el mateix projecte, començant el mateix dia)
 
 ![ref3]
 

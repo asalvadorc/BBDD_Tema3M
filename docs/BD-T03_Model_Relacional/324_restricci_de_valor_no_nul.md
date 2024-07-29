@@ -8,7 +8,7 @@ Obliga a que el camp agafe sempre un valor. Per exemple, el camp **Nom** és un 
 
 Ho representarem posant **no nul** entre parèntesi baix del camp.
 
-EMPLEAT (dni, nom, adreca, telefon, sou, data\_n) 
+EMPLEAT (dni, nom, adreca, telefon, sou, data_n) 
 
 (no nul)
 

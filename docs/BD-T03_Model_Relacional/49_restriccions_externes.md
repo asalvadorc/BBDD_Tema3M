@@ -20,7 +20,7 @@ ja hem comentat que donarà lloc, a banda de les taules de les entitats, a una a
 
 ![ref2]
 
-on **dni** i **num\_p** són claus externes. Però l'entitat projecte participa de forma total en la relació, és a dir, en tot projecte ha d'haver un empleat treballant. ¿Com ho controlem això? Doncs és una nova restricció externa que la podríem formular així: 
+on **dni** i **num_p** són claus externes. Però l'entitat projecte participa de forma total en la relació, és a dir, en tot projecte ha d'haver un empleat treballant. ¿Com ho controlem això? Doncs és una nova restricció externa que la podríem formular així: 
 
 **RexR3**: Tot projecte ha de tenir com a mínim un empleat treballant-hi. 
 

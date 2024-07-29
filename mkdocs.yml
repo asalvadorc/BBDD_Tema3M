@@ -3,6 +3,9 @@ site_name: BD - Bases de Dades
 theme: 
   name: readthedocs
   logo: assets/logocaminas.png
+
+extra_css:
+  - css/extra.css  
 nav:
   - Tema 3 Model Relacional:
     - Objectius i coneixements previs: BD-T03_Model_Relacional/objectius_i_coneixements_previs.md
