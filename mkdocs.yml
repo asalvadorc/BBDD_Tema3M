@@ -12,10 +12,10 @@ nav:
     - 1. Introducció: BD-T03_Model_Relacional/1_introducci.md
     - 2. Estructura del Model Relacional: BD-T03_Model_Relacional/2_estructura_del_model_relacional.md
     - 3. Restriccions:
-      - 3. Restriccions: BD-T03_Model_Relacional/3_restriccions.md
+      - BD-T03_Model_Relacional/3_restriccions.md
       - 3.1 Restriccions inherents: BD-T03_Model_Relacional/31_restriccions_inherents.md
       - 3.2 Restriccions d'usuari:
-        - 3.2 Restriccions d'usuari: BD-T03_Model_Relacional/32_restriccions_dusuari.md
+        - BD-T03_Model_Relacional/32_restriccions_dusuari.md
         - 3.2.1 Restricció de domini: BD-T03_Model_Relacional/321_restricci_de_domini.md
         - 3.2.2 Restricció de clau principal: BD-T03_Model_Relacional/322_restricci_de_clau_principal.md
         - 3.2.3 Restricció d'unicitat: BD-T03_Model_Relacional/323_restricci_dunicitat.md
@@ -23,7 +23,7 @@ nav:
         - 3.2.5 Integritat referencial: BD-T03_Model_Relacional/325_integritat_referencial.md
         - 3.2.6 Restriccions externes: BD-T03_Model_Relacional/326_restriccions_externes.md
     - 4. Tranformació del M. E/R al M. Relacional:
-      - 4. Tranformació del M. E/R al M. Relacional: BD-T03_Model_Relacional/4_tranformaci_del_m_er_al_m_relacional.md
+      - BD-T03_Model_Relacional/4_tranformaci_del_m_er_al_m_relacional.md
       - 4.1 Entitats: BD-T03_Model_Relacional/41_entitats.md
       - 4.2 Relacions 1:N: BD-T03_Model_Relacional/42_relacions_1n.md
       - 4.3 Relacions M:N: BD-T03_Model_Relacional/43_relacions_mn.md
