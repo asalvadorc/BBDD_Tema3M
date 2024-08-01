@@ -9,10 +9,10 @@ que no es podrà repetir.
 Representarem que un camp és únic, posant **únic** entre parèntesi baix del
 camp. Per exemple, si considerem que el camp nom de la taula EMPLEAT ha de ser
 únic, ho representarem així:
-
+~~~
 EMPLEAT (_dni_ , nom, adreca, telefon, sou, data_n)  
-
-> > > (únic)
+                (únic)
+~~~
 
 En **Access** la restricció d'unicitat (**UNIQUE**)**** es defineix posant en
 l'apartat**_Indexado_** el valor _**Sí (sin duplicados)**_. En la figura es

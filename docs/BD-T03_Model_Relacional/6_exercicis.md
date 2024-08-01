@@ -1,8 +1,8 @@
 # 6\. Exercicis
 
-![](icon_activity.gif)
 
-## Exercici 1
+
+## ![](icon_activity.gif) Exercici 1
 
 Realitzar l'esquema relacional corresponent a l'exercici 1 del Tema 2.
 
@@ -10,17 +10,15 @@ Recordeu que teníem 3 opcions:
 
 ![](T2Act1_3sol.png)
 
-![](icon_activity.gif)
 
-## Exercici 2
+## ![](icon_activity.gif) Exercici 2
 
 Realitzar l'esquema relacional corresponent a l'exercici 2 del Tema 2.
 
 ![](T2Ex2.jpeg)
 
-![](icon_activity.gif)
 
-## Exercici 3
+## ![](icon_activity.gif) Exercici 3
 
 Realitzar l'esquema relacional corresponent a l'exercici 3 del Tema 2.
 
@@ -28,9 +26,8 @@ Realitzar l'esquema relacional corresponent a l'exercici 3 del Tema 2.
 
 ![](T2Ex3.jpeg)
 
-![](icon_activity.gif)
 
-## Exercici 4
+## ![](icon_activity.gif) Exercici 4
 
 Realitzar l'esquema relacional corresponent a l'exercici 4 del Tema 2.
 Recordeu que el rombe amb doble ratlla significa dependència en identificació;
@@ -40,10 +37,7 @@ Recordeu que el rombe amb doble ratlla significa dependència en identificació;
 ![](T2Ex4.jpeg)
 
 
-
-![](icon_activity.gif)
-
-## Exercici 5
+## ![](icon_activity.gif) Exercici 5
 
 Realitzar l'esquema relacional corresponent a l'exercici 5 del Tema 2.
 
@@ -52,10 +46,7 @@ Realitzar l'esquema relacional corresponent a l'exercici 5 del Tema 2.
 ![](T2Ex5.jpeg)
 
 
-
-![](icon_activity.gif)
-
-## Exercici 6
+## ![](icon_activity.gif) Exercici 6
 
 Realitzar l'esquema relacional corresponent a l'exercici 6 del Tema 2.
 
@@ -64,10 +55,7 @@ Realitzar l'esquema relacional corresponent a l'exercici 6 del Tema 2.
 ![](T2Ex6.jpeg)
 
 
-
-![](icon_activity.gif)
-
-## Exercici 7
+## ![](icon_activity.gif) Exercici 7
 
 Realitzar l'esquema relacional corresponent a l'exercici 7 del Tema 2.
 
@@ -79,9 +67,8 @@ es para en un trajecte.
 
 ![](T2Act7.jpeg)
 
-![](icon_activity.gif)
 
-## Exercici 8
+## ![](icon_activity.gif) Exercici 8
 
 Es desitja mantenir informació sobre el material informàtic d'una empresa.
 
@@ -129,9 +116,8 @@ Observeu com per una banda heu de guardar els permisos dels empleats sobre les
 aplicacions, i per una altra els accessos reals fets pels empleats a les
 aplicacions, i en aquest cas hem de saber des de quin ordinador i la data
 
-![](icon_activity.gif)
 
-## Exercici 9
+## ![](icon_activity.gif) Exercici 9
 
 Dissenyar el diagrama E-R, i traduir-lo després al relacional, d'un sistema
 d'informació d'una empresa que ven gran varietat de productes. Per a la venda
@@ -164,11 +150,9 @@ El sistema d'informació ha de ser capaç de respondre a consultes com:
 
 ![](T3_6_2.png)
 
-  
 
-![](icon_activity.gif)
 
-## Exercici 10
+## ![](icon_activity.gif) Exercici 10
 
 Fer l'esquema E/R i posteriorment passar-lo a relacional corresponent a un
 Parc Zoològic que vol guardar informació de les espècies que té, els empleats

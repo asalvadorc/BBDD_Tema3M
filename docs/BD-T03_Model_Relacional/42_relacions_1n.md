@@ -11,6 +11,8 @@ També s'inclouran en **B** tots els possibles atributs de la relació.
 
 La següent animació intenta explicar-ho millor:
 
+<iframe src="https://slides.com/aliciasalvador/bd-t3-exemple_clau_externa/embed" width="576" height="420" title="Copy of BD-T3-exemple_clau_externa" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Si a més l'entitat que participa amb grau N ho fa de forma **total**(com en la
 figura de baix), la clau externa **no pot ser nula** (és a dir sempre ha de
 tenir un valor).

@@ -4,11 +4,10 @@ Obliga a que el camp agafe sempre un valor. Per exemple, el camp **Nom** és un
 bon candidat a ser no nul.
 
 Ho representarem posant **no nul** entre parèntesi baix del camp.
-
+~~~
 EMPLEAT (_dni_ , nom, adreca, telefon, sou, data_n)  
-
-> > > (no nul)
-
+                (no nul)
+~~~
 P er mig de la representació alternativa, podem marcar amb un punt negre
 davant del camp no nul.
 

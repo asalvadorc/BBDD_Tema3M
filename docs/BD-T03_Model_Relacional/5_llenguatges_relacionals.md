@@ -10,11 +10,11 @@ Relacional.
 
 > El llenguatge **SQL** , que és l'estàndard de fet i que veurem en el tema 6,
 > està basat en l'Àlgebra relacional. Les sentències són de la forma:
-
+~~~
 SELECT dni, nom, sou  
 FROM EMPLEAT  
 WHERE sou > 2000
-
+~~~
 > on estem projectant sobre els camps dni, nom i sou, i seleccionant les files
 > que acompleixen la condició del final
 >
@@ -22,10 +22,10 @@ WHERE sou > 2000
 > cartesià** de dues taules consisteix en combinar cadascuna de les files
 > d'una taula amb cadascuna de les files de l'altra. Així, el producte
 > cartesià de **Empleat** i **Departament** seria:
-
+~~~
 SELECT dni, nom, nom_d  
 FROM EMPLEAT , DEPARTAMENT
-
+~~~
 > Però aquest operació no sembla tenir molt de sentit en aquest cas ¿per a què
 > volem combinar un empleat amb tots els departaments de l'empresa? Sembla
 > molt més lògic combinar cada empleat únicament amb el departament al qual
@@ -34,11 +34,11 @@ FROM EMPLEAT , DEPARTAMENT
 > La **reunió** de dues taules consisteix en fer un producte cartesià i
 > després seleccionar les files que tenen el mateix valor en dos camps
 > determinats (un de cada taula).
-
+~~~
 SELECT dni, nom, nom_d  
 FROM EMPLEAT , DEPARTAMENT  
 WHERE EMPLEAT.departament = DEPARTAMENT.num_d
-
+~~~
 > És a dir, del producte cartesià seleccionem només les files en les quals
 > coincideixen els camp departament i num_d, combinant cada empleat amb el seu
 > departament.
