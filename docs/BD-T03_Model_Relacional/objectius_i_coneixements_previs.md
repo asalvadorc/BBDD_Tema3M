@@ -1,8 +1,7 @@
 # Objectius i coneixements previs
 
 
-
-## ![](icon_objectives.gif) Objectius
+**![](icon_objectives.gif) Objectius**
 
 Els objectius d'aquest tema són:
 
@@ -24,7 +23,7 @@ Els objectius d'aquest tema són:
   6. Redefinir les taules necessàries atenent a motius pràctics.
 
 
-## ![](icon_preknowledge.gif) Coneixements previs
+**![](icon_preknowledge.gif) Coneixements previs**
 
 Els coneixements previs necessaris per al tema són els del tema 2: Model
 Entitat-Relació. En certa manera aquest tema aclarirà conceptes d'aquell tema,
