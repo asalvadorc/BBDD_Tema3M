@@ -1,4 +1,4 @@
-# 5\. Llenguatges relacionals
+# 5. Llenguatges relacionals
 
 Fins el moment hem dissenyat una B.D. Relacional. Però si volem la B.D. és per
 consultar-la, treure la informació que ens interessa, manipular-la. Ens farà

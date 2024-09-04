@@ -1,4 +1,4 @@
-# 2\. Estructura del Model Relacional
+# 2. Estructura del Model Relacional
 
 
 
