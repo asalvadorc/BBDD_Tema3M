@@ -2,7 +2,7 @@
 
 
 
-L'element basic del Model Relacional es la **RELACI Ó**, que sera una taula o
+L'element basic del Model Relacional es la **RELACIÓ**, que sera una taula o
 matriu bidimensional amb unes caracteristiques o restriccions que comentarem
 mes avant.
 
