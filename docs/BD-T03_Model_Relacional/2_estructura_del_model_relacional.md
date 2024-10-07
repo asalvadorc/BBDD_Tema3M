@@ -1,6 +1,6 @@
 # 2. Estructura del Model Relacional
 
-L'element bàsic del Model Relacional es la **RELACIÓ**, que serà una taula o
+L'element bàsic del Model Relacional és la **RELACIÓ**, que serà una taula o
 matriu bidimensional amb unes característiques o restriccions que comentarem
 mes avant.
 
@@ -34,13 +34,13 @@ possible, per prevenir errors.
 
 
 
-L'**ESQUEMA o ESTRUCTURA DE LA RELACIÓ** es la definició de la relació, es a
-dir, atributs que te, dominis d'aquests i restriccions que podrem definir,
+L'**ESQUEMA o ESTRUCTURA DE LA RELACIÓ** és la definició de la relació, es a
+dir, atributs que té, dominis d'aquests i restriccions que podrem definir,
 que veurem en la següent pregunta.
 
 
 
-L'**ESTAT DE LA RELACIÓ** es la informació que conte en un determinat moment.
+L'**ESTAT DE LA RELACIÓ** és la informació que conté en un determinat moment.
 Normalment l'estat variara contínuament al llarg del temps, be perquè
 s'afegeixen noves tuples (augmenta la cardinalitat), be perquè es modifica el
 valor d'algun atribut en alguna tupla. En canvi l'esquema difícilment
@@ -48,13 +48,13 @@ canviara.
 
 
 
-Una **CLAU CANDIDATA** es un atribut o conjunt d'atributs que identifiquen
+Una **CLAU CANDIDATA** és un atribut o conjunt d'atributs que identifiquen
 unívocament cada tupla de la relació. En l'exemple podrien ser claus
 candidates **Dni** , **Nom** , fins i tot ens podríem plantejar combinacions,
 com el conjunt **(Nom, Data_n)** , ja que sembla impossible que dues persones
 de l'empresa es diguen igual i damunt hagen nascut el mateix dia. De entre
 totes les claus candidates en triarem una, que serà la **CLAU PRINCIPAL** o
-**CLAU PRIM ÀRIA**, i servira per a identificar de forma efectiva en el Model
+**CLAU PRIM ÀRIA**, i servirà per a identificar de forma efectiva en el Model
 cadascuna de les tuples.
 
 
