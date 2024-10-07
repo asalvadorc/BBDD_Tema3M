@@ -10,7 +10,7 @@ mes avant.
 
 
 
-Normalment una relació te un **NOM** (p.e. **Empleat**) encara que
+Normalment una relació té un **NOM** (p.e. **Empleat**) encara que
 ocasionalment no en tindrà, per exemple una taula que siga el resultat d'una
 consulta poc freqüent.
 
