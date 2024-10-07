@@ -1,9 +1,7 @@
 # 2. Estructura del Model Relacional
 
-
-
-L'element basic del Model Relacional es la **RELACIÓ**, que sera una taula o
-matriu bidimensional amb unes caracteristiques o restriccions que comentarem
+L'element bàsic del Model Relacional es la **RELACIÓ**, que serà una taula o
+matriu bidimensional amb unes característiques o restriccions que comentarem
 mes avant.
 
 ![](T3_2_1_2.png)
@@ -12,20 +10,20 @@ mes avant.
 
 
 
-Normalment una relacio te un **NOM** (p.e. **Empleat**) encara que
-ocasionalment no en tindra, per exemple una taula que siga el resultat d'una
-consulta poc frequent.
+Normalment una relació te un **NOM** (p.e. **Empleat**) encara que
+ocasionalment no en tindrà, per exemple una taula que siga el resultat d'una
+consulta poc freqüent.
 
 
 
-Les **FILES** , on tenim la informacio de les ocurrencies, dels individus,
-tambe s'anomenen **TUPLES** (de vegades per similitud amb fitxers tambe
+Les **FILES** , on tenim la informació de les ocurrències, dels individus,
+també s'anomenen **TUPLES** (de vegades per similitud amb fitxers també
 s'anomenen **REGISTRES**).
 
 
 
-Les **COLUMNES** , que seran caracteristiques que ens interessen dels
-individus i que en cada tupla agafa un valor, les anomenarem tambe
+Les **COLUMNES** , que seran característiques que ens interessen dels
+individus i que en cada tupla agafa un valor, les anomenarem també
 **ATRIBUTS** (o **CAMPS**).
 
 
@@ -36,54 +34,54 @@ possible, per prevenir errors.
 
 
 
-L'**ESQUEMA o ESTRUCTURA DE LA RELACI Ó** es la definicio de la relacio, es a
-dir, atributs que te, dominis d'aquestos i restriccions que podrem definir,
-que veurem en la seguent pregunta.
+L'**ESQUEMA o ESTRUCTURA DE LA RELACIÓ** es la definició de la relació, es a
+dir, atributs que te, dominis d'aquests i restriccions que podrem definir,
+que veurem en la següent pregunta.
 
 
 
-L'**ESTAT DE LA RELACI Ó** es la informacio que conte en un determinat moment.
-Normalment l'estat variara continuament al llarg del temps, be perque
-s'afegeixen noves tuples (augmenta la cardinalitat), be perque es modifica el
-valor d'algun atribut en alguna tupla. En canvi l'esquema dificilment
+L'**ESTAT DE LA RELACIÓ** es la informació que conte en un determinat moment.
+Normalment l'estat variara contínuament al llarg del temps, be perquè
+s'afegeixen noves tuples (augmenta la cardinalitat), be perquè es modifica el
+valor d'algun atribut en alguna tupla. En canvi l'esquema difícilment
 canviara.
 
 
 
 Una **CLAU CANDIDATA** es un atribut o conjunt d'atributs que identifiquen
-univocament cada tupla de la relacio. En l'exemple podrien ser claus
-candidates **Dni** , **Nom** , fins i tot ens podriem plantejar combinacions,
+unívocament cada tupla de la relació. En l'exemple podrien ser claus
+candidates **Dni** , **Nom** , fins i tot ens podríem plantejar combinacions,
 com el conjunt **(Nom, Data_n)** , ja que sembla impossible que dues persones
 de l'empresa es diguen igual i damunt hagen nascut el mateix dia. De entre
-totes les claus candidates en triarem una, que sera la **CLAU PRINCIPAL** o
+totes les claus candidates en triarem una, que serà la **CLAU PRINCIPAL** o
 **CLAU PRIM ÀRIA**, i servira per a identificar de forma efectiva en el Model
 cadascuna de les tuples.
 
 
 
 Podria donar-se el cas que un atribut no agafe cap valor per a una tupla
-determinada, per exemple, un empleat que no tinga telefon. Aleshores li
+determinada, per exemple, un empleat que no tinga telèfon. Aleshores li
 donarem el **VALOR NUL**.
 
 
 
-Per ultim, les relacions o taules poden ser **PERMANENTS** o **TEMPORALS**.
+Per últim, les relacions o taules poden ser **PERMANENTS** o **TEMPORALS**.
 Les primeres es guarden. Les segones, normalment resultat d'una consulta
 ocasional, no.
 
 
 
-Representarem la taula amb el nom de la taula en majuscules seguit, entre
-parentesis, en minuscules i separats per comes, pels noms dels camps, amb la
-clau principal subratllada. Tambe es convenient fugir dels caracters especials
+Representarem la taula amb el nom de la taula en majúscules seguit, entre
+parèntesis, en minúscules i separats per comes, pels noms dels camps, amb la
+clau principal subratllada. També es convenient fugir dels caràcters especials
 (vocals accentuades, ç, ñ, guionet, ...) per no tenir problemes quan anem a
 implementar-la en un SGBD determinat (Access, Oracle, PostgreSQL, ...). Per a
 una millor lectura intentarem posar sempre la clau principal al principi, el o
 els primers camps.
-
-EMPLEAT (dni, nom, adreca, telefon, sou, data_n)
-
-Tambe podem utilitzar una forma alternativa de representar-la, amb un requadre
+```
+EMPLEAT (dni, nom, adreça, telèfon, sou, data_n)
+```
+També podem utilitzar una forma alternativa de representar-la, amb un requadre
 que agafa tota la taula, dalt el nom de la taula, i baix cadascun dels camps,
 posant la clau principal en negreta o subratllada.
 
