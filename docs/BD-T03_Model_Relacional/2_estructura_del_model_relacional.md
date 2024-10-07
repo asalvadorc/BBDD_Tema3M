@@ -42,9 +42,9 @@ que veurem en la següent pregunta.
 
 L'**ESTAT DE LA RELACIÓ** és la informació que conté en un determinat moment.
 Normalment l'estat variara contínuament al llarg del temps, be perquè
-s'afegeixen noves tuples (augmenta la cardinalitat), be perquè es modifica el
+s'afegeixen noves tuples (augmenta la cardinalitat), bé perquè es modifica el
 valor d'algun atribut en alguna tupla. En canvi l'esquema difícilment
-canviara.
+canviarà.
 
 
 
