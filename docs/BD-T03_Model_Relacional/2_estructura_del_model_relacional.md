@@ -34,7 +34,7 @@ possible, per prevenir errors.
 
 
 
-L'**ESQUEMA o ESTRUCTURA DE LA RELACIÓ** és la definició de la relació, es a
+L'**ESQUEMA o ESTRUCTURA DE LA RELACIÓ** és la definició de la relació, és a
 dir, atributs que té, dominis d'aquests i restriccions que podrem definir,
 que veurem en la següent pregunta.
 
@@ -73,7 +73,7 @@ ocasional, no.
 
 Representarem la taula amb el nom de la taula en majúscules seguit, entre
 parèntesis, en minúscules i separats per comes, pels noms dels camps, amb la
-clau principal subratllada. També es convenient fugir dels caràcters especials
+clau principal subratllada. També és convenient fugir dels caràcters especials
 (vocals accentuades, ç, ñ, guionet, ...) per no tenir problemes quan anem a
 implementar-la en un SGBD determinat (Access, Oracle, PostgreSQL, ...). Per a
 una millor lectura intentarem posar sempre la clau principal al principi, el o
