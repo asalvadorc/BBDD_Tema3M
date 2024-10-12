@@ -33,7 +33,7 @@ tema següent, el de **Normalització**.
 
 Per cada relació 1:N entre les entitats **A** i **B** , on **A** és la que
 participa amb grau de cardinalitat 1, i **B** amb grau N, s'inclou un nou camp
-en **B**(del mateix tipus que la clau principal de**A**) que a més serà **clau
+en **B** (del mateix tipus que la clau principal de**A**) que a més serà **clau
 externa** que apuntarà a **A** , més concretament a la clau principal de
 **A**. En moltes ocasions al camp nou de **B** se li posa el mateix nom que a
 la clau principal de **A** , però no és necessari, depén del gust de cadascú.

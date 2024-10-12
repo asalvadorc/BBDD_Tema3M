@@ -68,47 +68,6 @@ També es podran definir dominis que estiguen en un determinat interval (nota
 d'un examen: 0-10) o d'un tipus enumerat (nota d'avaluació: MD, IN, SUF, BE,
 NOT, EXC).
 
-Es poden definir regles de verificació o validació (**CHECK**) que ens ajuden
-a perfilar molt bé el domini. Aquest seria un exemple d'exigir que el
-treballador tinga de 18 a 65 anys. La sintaxi és inventada, només per a
-entendre-ho, amb una hipotètica funció que trau l'any, i una altra que ens
-dóna la data d'avui.
-
-~~~
-CHECK ( Any(avui - data_n) >= 18) and (Any(avui - data_n) < 65) )
-~~~
-
-**<u>Nota</u>**
-
-En **Access** la regla de validació seria:
-
-~~~
-AgregFecha("aaaa";18;[data_n])<=Ahora() Y AgregFecha("aaaa";65;[data_n])>=Ahora()
-~~~
-
-on es veu que la fórmula és afegir 18 anys a la data de naixement i
-comprovar que no supera la data d'avui; i afegir 65 anys a la data de
-naixement i comprovar que sí supera la data d'avui.
-
-Per exemple, **Empleat** podria quedar:
-
-<code>EMPLEAT (**dni**:caràcter(10), nom:caràcter(30), adreca:caràcter(30), telefon:enter(9), sou:numèric(6,2), data_n:data)</code>
-
-amb la regla de validació:
-~~~
-CHECK Sou > 0
-~~~
-a banda de la mencionada anteriorment.
-
-Si utilitzem la manera de representar alternativa, ho tindríem així:
-
-![](T3_3_2_1_0.png)
-
-La següent imatge mostra com es faria en **Access** la primera regla de
-validació, aplicada al camp **data_n**
-
-![](T3_3_2_1.png)
-
 
 ### 3.2.2 Restricció de clau principal
 
@@ -131,15 +90,10 @@ No és convenient que la clau principal estiga formada per un número excessiu
 de camps. Podríem dir que 3 és el màxim. Si la clau candidata està formada per
 més de 3 camps, o bé triem una altra clau candidata, o bé ens inventem una.
 
-En **Access** es marca la clau principal amb una figura d'una clau. En la
-figura es veu com fer que el camp **dni** siga la clau principal de la taula
-**EMPLEAT** :
+Ho representarem així:
 
-![](T3_3_2_2.png)
+<code>EMPLEAT (<u>dni</u>, nom, adreça, telèfon, sou, data_n)</code>
 
-En **LibreOffice Base** es fa de la mateixa manera:
-
-![](T03_3_2_2_2.png)
 
 ### 3.2.3 Restricció d'unicitat
 
@@ -153,26 +107,10 @@ Representarem que un camp és únic, posant **únic** entre parèntesi baix del
 camp. Per exemple, si considerem que el camp nom de la taula EMPLEAT ha de ser
 únic, ho representarem així:
 
-<code>EMPLEAT (**dni** , nom, adreca, telefon, sou, data_n)
+<code>EMPLEAT (<u>dni</u> , nom, adreca, telefon, sou, data_n)
               (únic)</code>
 
-En **Access** la restricció d'unicitat (**UNIQUE**) es defineix posant en
-l'apartat **Indexado** el valor **Sí (sin duplicados)**. En la figura es
-mostra com fer que el camp **nom** de la taula **EMPLEAT** siga únic.
 
-![](T3_3_2_3.png)
-
-En **Base** de **LibreOffice** es fa creant un índex, en el símbol
-![](T03_3_2_3_2.png)
-
-Haurem crear un nou índex, el camp pel qual volem l'índex, l'ordre que ens
-interessa (normalment ascendent) i **deixar activa la casella Únic**
-
-![](T03_3_2_3_3.png)
-
-En aquesta imatge es veu com pel fet d'haver creat la clau principal, ja
-s'havia creat un índex, en la imatge **SYS_IDX_46**. No es tracta de modificar
-aquest, sinó crear-ne un nou.
 
 ### 3.2.4 Restricció de valor no nul
 
@@ -181,24 +119,15 @@ bon candidat a ser no nul.
 
 Ho representarem posant **no nul** entre parèntesi baix del camp.
 
-<code>EMPLEAT (**dni** , nom, adreca, telefon, sou, data_n)
+<code>EMPLEAT <u>dni</u> , nom, adreca, telefon, sou, data_n)
              (no nul)</code>
 
 
-P er mig de la representació alternativa, podem marcar amb un punt negre
+Per mig de la representació alternativa, podem marcar amb un punt negre
 davant del camp no nul.
 
 ![](T3_3_2_4_0.png)
 
-En Access la manera de posar un camp com a **NOT NULL** serà posar en
-l'apartat _**Requerido**_ el valor _**Sí**_
-
-![](T3_3_2_4.png)
-
-En **Base** de **LibreOffice** haurem de posar **Sí** a l'apartat **Es
-necessita una entrada**
-
-![](T03_3_2_4_2.png)
 
 ### 3.2.5 Integritat referencial
 
@@ -268,24 +197,6 @@ article. Observem, però, que aquesta clau externa hauria d'admetre valors nuls.
 Hi ha SGBD que fins i tot permeten accions distintes per al cas d'esborrament
 i d'actualització de la clau, com per exemple Access.
 
-En **Access** les restriccions d'integritat (claus externes) es defineixen amb
-les **relacions** entre taules. El següent vídeo mostra com crear la clau
-externa de Familiar cap a Empleat, i es pot observar com la manera de
-representar-lo és molt pareguda a la forma alternativa que estem utilitzant.
-
-<iframe src="https://slides.com/aliciasalvador/bd-t3-video-access-relacions/embed" width="576" height="420" title="Copy of BD-T3-Video-Access-relacions" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-Hem d'assegurar-nos sobretot que la tala principal està a l'esquerra en a
-imatge 5, i que l'altra està a la dreta marcada com "taula relacionada".
-
-I aquest seria la manera de fer-ho en **Base de LibreOffice** , totalment
-paral·lela, però millor arrastrar al revès, de la relacionada a la principal
-
-<iframe src="https://slides.com/aliciasalvador/bd-t3-video-base-relacions/embed" width="576" height="420" title="Copy of BD-T3-Video-Base-relacions" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  
-
-
 ### 3.2.6 Restriccions externes
 
 A pesar de totes les restriccions anteriors, que normalment els SGBDR
@@ -302,12 +213,6 @@ l'usuari després d'una actualització. Són els **Disparadors**(**TRIGGERS**).
 Aquest concepte és molt potent, ja que dóna una resposta procedimental on es
 pot fer qualsevol cosa.
 
-En **Access** dues seran les ferramentes per a fer açò, les **Macros** i
-procediments en Visual Basic.
-
-En **Base** de **Libreoffice** només tenim les **Macros** , però no seran com
-les d'Access amb accions predeterminades, sinó directament procediments en
-LibreOffice Basic
 
 Llicenciat sota la  [Llicència Creative Commons Reconeixement NoComercial
 CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
