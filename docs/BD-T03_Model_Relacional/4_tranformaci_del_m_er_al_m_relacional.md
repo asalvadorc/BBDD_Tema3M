@@ -44,7 +44,7 @@ La següent animació intenta explicar-ho millor:
 
 <iframe src="https://slides.com/aliciasalvador/bd-t3-exemple_clau_externa/embed" width="576" height="420" title="Copy of BD-T3-exemple_clau_externa" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Si a més l'entitat que participa amb grau N ho fa de forma **total**(com en la
+Si a més l'entitat que participa amb grau N ho fa de forma **total** (com en la
 figura de baix), la clau externa **no pot ser nula** (és a dir sempre ha de
 tenir un valor).
 
@@ -52,11 +52,11 @@ tenir un valor).
 
 En l'exemple nostre:
 
-  * Per la relació **_Pertany_** (figura de dalt) inclourem l'atribut **departament** a ******Empleat** , que a més haurà de ser no nul.
+  * Per la relació **_Pertany_** (figura de dalt) inclourem l'atribut **departament** a **Empleat** , que a més haurà de ser no nul.
 
-  * Per la relació **_Controla_** inclourem l'atribut **departament** a ******Projecte** (no nul).
+  * Per la relació **_Controla_** inclourem l'atribut **departament** a **Projecte** (no nul).
 
-  * Per la relació **_Supervisa_** inclourem l'atribut **supervisor** a ******Empleat** (és reflexiva), però aquest sí que pot ser nul. Encara que semble estrany, un camp pot ser clau externa que apunta a la clau principal de la mateixa taula.
+  * Per la relació **_Supervisa_** inclourem l'atribut **supervisor** a **Empleat** (és reflexiva), però aquest sí que pot ser nul. Encara que semble estrany, un camp pot ser clau externa que apunta a la clau principal de la mateixa taula.
 
   * Per la relació **_Té_** entre empleat i familiar, inclourem en **FAMILIAR** l'atribut **dni_e** , però com que Familiar és dèbil la veurem millor un poc més endavant.
 
