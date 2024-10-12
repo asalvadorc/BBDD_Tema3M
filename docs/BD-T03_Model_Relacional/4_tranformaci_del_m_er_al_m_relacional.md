@@ -26,7 +26,6 @@ En el nostre exemple, com teníem 4 entitats, ens eixiran de moment 4 taules:
 ![](T3_4_1_1.png)
 
 
-
 No considerarem els atributs multivaluats. Els tractarem i solucionarem en el
 tema següent, el de **Normalització**.
 
@@ -113,9 +112,9 @@ continuarien sent-ho.
 
 No hi ha una forma única de traduir aquestes relacions. Tres seran les
 possibles traduccions, segons la participació total o parcial de les entitats
-en la relació, i també segons el que ens diga el "_sentit comú_ ".
+en la relació, i també segons el que ens diga el "_sentit comú_".
 
-  * Si de les dues entitats que entren la relació, **A** i **B** ,**** una d'elles i només una, participa de forma total, per exemple **B** , traduirem la relació 1:1 com una **clau externa** en la taula corresponent a l'entitat que participa de forma total (**B**). Podem obligar també a que aquest camp que serà clau externa siga **no nul** (ja que totes les ocurrències de **B** entren en la relació). També podem fer que aquest camp siga **únic** (no es podrà repetir, ja que si es puguera repetir seria una relació 1:N). A més, inclourem en**B** tots els possibles atributs de la relació. 
+  * Si de les dues entitats que entren la relació, **A** i **B**, una d'elles i només una, participa de forma total, per exemple **B** , traduirem la relació 1:1 com una **clau externa** en la taula corresponent a l'entitat que participa de forma total (**B**). Podem obligar també a que aquest camp que serà clau externa siga **no nul** (ja que totes les ocurrències de **B** entren en la relació). També podem fer que aquest camp siga **únic** (no es podrà repetir, ja que si es puguera repetir seria una relació 1:N). A més, inclourem en **B** tots els possibles atributs de la relació. 
 
 > Per exemple, la relació **_dirigeix_** , que és 1:1 entre **EMPLEAT** i
 > **DEPARTAMENT** :
@@ -136,7 +135,7 @@ en la relació, i també segons el que ens diga el "_sentit comú_ ".
 > departament.
 
 > Vegem un altre exemple de relació 1:1, el de les papallones. Teníem una
-> relació 1:1 entre **PERSONA** i**COL·LECCIÓ**
+> relació 1:1 entre **PERSONA** i **COL·LECCIÓ**
 
 > ![](T3_4_4_3.png)  
 >
@@ -393,6 +392,8 @@ Sense tenir en compte l'especialització tindrem aquesta solució:
 
 aquest vídeo explica tot el procés pas a pas:
 
+<iframe src="https://slides.com/aliciasalvador/bd-t3-video_exemple_er_rel/embed" width="600" height="500" title="Copy of BD-T3-video_exemple_er_rel" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 I aquesta seria la forma alternativa de representar-lo:
 
 ![](T3_4_10_1_5.png)
@@ -402,6 +403,8 @@ I tenint en compte l'especialització:
 ![](T3_4_10_2.png)
 
 que aquest vídeo explica en els punts diferents a l'anterior solució
+
+<iframe src="https://slides.com/aliciasalvador/bd-t3-video_exemple_er_rel_esp/embed" width="600" height="500" title="Copy of BD-T3-video_exemple_er_rel_esp" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 I ací tindríem la representació alternativa:
 

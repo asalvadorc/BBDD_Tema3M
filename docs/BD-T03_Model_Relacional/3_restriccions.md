@@ -78,22 +78,22 @@ dóna la data d'avui.
 CHECK ( Any(avui - data_n) >= 18) and (Any(avui - data_n) < 65) )
 ~~~
 
-> **_Nota_**
+**<u>Nota</u>**
 
-> En **Access** la regla de validació seria:
+En **Access** la regla de validació seria:
 
 ~~~
 AgregFecha("aaaa";18;[data_n])<=Ahora() Y AgregFecha("aaaa";65;[data_n])>=Ahora()
 ~~~
 
-> on es veu que la fórmula és afegir 18 anys a la data de naixement i
-> comprovar que no supera la data d'avui; i afegir 65 anys a la data de
-> naixement i comprovar que sí supera la data d'avui.
+on es veu que la fórmula és afegir 18 anys a la data de naixement i
+comprovar que no supera la data d'avui; i afegir 65 anys a la data de
+naixement i comprovar que sí supera la data d'avui.
 
 Per exemple, **Empleat** podria quedar:
-~~~
-EMPLEAT (_dni_ :caràcter(10), nom:caràcter(30), adreca:caràcter(30), telefon:enter(9), sou:numèric(6, ), data_n:data)
-~~~
+
+<code>EMPLEAT (**dni**:caràcter(10), nom:caràcter(30), adreca:caràcter(30), telefon:enter(9), sou:numèric(6,2), data_n:data)</code>
+
 amb la regla de validació:
 ~~~
 CHECK Sou > 0
@@ -109,10 +109,6 @@ validació, aplicada al camp **data_n**
 
 ![](T3_3_2_1.png)
 
-**_Nota_**
-
-En Base de LibreOffice resulta més complicada la creació de regles de
-validació. S'ha de fer per mig de Macros associades a formularis
 
 ### 3.2.2 Restricció de clau principal
 
@@ -156,13 +152,12 @@ que no es podrà repetir.
 Representarem que un camp és únic, posant **únic** entre parèntesi baix del
 camp. Per exemple, si considerem que el camp nom de la taula EMPLEAT ha de ser
 únic, ho representarem així:
-~~~
-EMPLEAT (_dni_ , nom, adreca, telefon, sou, data_n)  
-                (únic)
-~~~
 
-En **Access** la restricció d'unicitat (**UNIQUE**)**** es defineix posant en
-l'apartat**_Indexado_** el valor _**Sí (sin duplicados)**_. En la figura es
+<code>EMPLEAT (**dni** , nom, adreca, telefon, sou, data_n)
+              (únic)</code>
+
+En **Access** la restricció d'unicitat (**UNIQUE**) es defineix posant en
+l'apartat **Indexado** el valor **Sí (sin duplicados)**. En la figura es
 mostra com fer que el camp **nom** de la taula **EMPLEAT** siga únic.
 
 ![](T3_3_2_3.png)
@@ -185,10 +180,11 @@ Obliga a que el camp agafe sempre un valor. Per exemple, el camp **Nom** és un
 bon candidat a ser no nul.
 
 Ho representarem posant **no nul** entre parèntesi baix del camp.
-~~~
-EMPLEAT (_dni_ , nom, adreca, telefon, sou, data_n)  
-                (no nul)
-~~~
+
+<code>EMPLEAT (**dni** , nom, adreca, telefon, sou, data_n)
+             (no nul)</code>
+
+
 P er mig de la representació alternativa, podem marcar amb un punt negre
 davant del camp no nul.
 
@@ -197,10 +193,10 @@ davant del camp no nul.
 En Access la manera de posar un camp com a **NOT NULL** serà posar en
 l'apartat _**Requerido**_ el valor _**Sí**_
 
-_****_![](T3_3_2_4.png)
+![](T3_3_2_4.png)
 
 En **Base** de **LibreOffice** haurem de posar **Sí** a l'apartat **Es
-necessita una entrada******
+necessita una entrada**
 
 ![](T03_3_2_4_2.png)
 
@@ -267,7 +263,7 @@ familiars dels que no són de l'empresa. Però imaginem, per exemple, un
 proveïdor que ens ha proporcionat uns articles. Pel fet de no treballar ja amb
 el proveïdor i llevar-lo de la B.D. no hauríem d'eliminar els articles. Seria
 suficient amb donar un valor nul al proveïdor d'aquest
-article[1].
+article. Observem, però, que aquesta clau externa hauria d'admetre valors nuls. Si no ho permet, millor un valor per defecte.
 
 Hi ha SGBD que fins i tot permeten accions distintes per al cas d'esborrament
 i d'actualització de la clau, com per exemple Access.
@@ -277,16 +273,18 @@ les **relacions** entre taules. El següent vídeo mostra com crear la clau
 externa de Familiar cap a Empleat, i es pot observar com la manera de
 representar-lo és molt pareguda a la forma alternativa que estem utilitzant.
 
+<iframe src="https://slides.com/aliciasalvador/bd-t3-video-access-relacions/embed" width="576" height="420" title="Copy of BD-T3-Video-Access-relacions" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
 Hem d'assegurar-nos sobretot que la tala principal està a l'esquerra en a
 imatge 5, i que l'altra està a la dreta marcada com "taula relacionada".
 
 I aquest seria la manera de fer-ho en **Base de LibreOffice** , totalment
 paral·lela, però millor arrastrar al revès, de la relacionada a la principal
 
-* * *
+<iframe src="https://slides.com/aliciasalvador/bd-t3-video-base-relacions/embed" width="576" height="420" title="Copy of BD-T3-Video-Base-relacions" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  
 
-[1]Observem, però, que aquesta clau externa hauria d'admetre valors nuls. Si no ho permet,
-millor un valor per defecte.
 
 ### 3.2.6 Restriccions externes
 

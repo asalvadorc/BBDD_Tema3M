@@ -78,9 +78,10 @@ clau principal subratllada. També és convenient fugir dels caràcters especial
 implementar-la en un SGBD determinat (Access, Oracle, PostgreSQL, ...). Per a
 una millor lectura intentarem posar sempre la clau principal al principi, el o
 els primers camps.
-```
-EMPLEAT (dni, nom, adreça, telèfon, sou, data_n)
-```
+
+<code>EMPLEAT (<u>dni</u>, nom, adreça, telèfon, sou, data_n)</code>
+
+
 També podem utilitzar una forma alternativa de representar-la, amb un requadre
 que agafa tota la taula, dalt el nom de la taula, i baix cadascun dels camps,
 posant la clau principal en negreta o subratllada.

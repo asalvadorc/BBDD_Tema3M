@@ -43,7 +43,7 @@ WHERE EMPLEAT.departament = DEPARTAMENT.num_d
 > coincideixen els camp departament i num_d, combinant cada empleat amb el seu
 > departament.
 
-  * En el **CÀLCUL RELACIONAL** , es defineixen variables de tipus **taula** , s'utilitzen operadors entre les variables, i també uns quantificadors (_**per a tot**_ i****_**existeix**_). Va de forma paral·lela a l'àlgebra de manera que es poden obtenir les mateixes coses amb l'Àlgebra i amb el Càlcul.
+  * En el **CÀLCUL RELACIONAL** , es defineixen variables de tipus **taula** , s'utilitzen operadors entre les variables, i també uns quantificadors (_**per a tot**_ i   _**existeix**_). Va de forma paral·lela a l'àlgebra de manera que es poden obtenir les mateixes coses amb l'Àlgebra i amb el Càlcul.
 
 > El **QBE** (Query By Example) es basa en el càlcul relacional, i la seua
 > particularitat és la senzillesa de fer consultes per als no experts. Per mig
