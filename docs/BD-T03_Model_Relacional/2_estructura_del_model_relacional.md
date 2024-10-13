@@ -54,7 +54,7 @@ candidates **Dni** , **Nom** , fins i tot ens podríem plantejar combinacions,
 com el conjunt **(Nom, Data_n)** , ja que sembla impossible que dues persones
 de l'empresa es diguen igual i damunt hagen nascut el mateix dia. De entre
 totes les claus candidates en triarem una, que serà la **CLAU PRINCIPAL** o
-**CLAU PRIM ÀRIA**, i servirà per a identificar de forma efectiva en el Model
+**CLAU PRIMÀRIA**, i servirà per a identificar de forma efectiva en el Model
 cadascuna de les tuples.
 
 

@@ -42,7 +42,6 @@ una relació. Podem considerar les següents:
 ## 3.2 Restriccions d'usuari
 
 
-
 Les anteriors són condicions, imposicions que ens dóna el mateix model.
 
 Les realment interessants per a nosaltres són les restriccions d'usuari, també
