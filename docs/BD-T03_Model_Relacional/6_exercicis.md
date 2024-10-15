@@ -57,7 +57,7 @@ Realitzar l'esquema relacional corresponent a l'exercici 6 del Tema 2.
 
 ## ![](icon_activity.gif) Exercici 7
 
-Realitzar l'esquema relacional corresponent a l'exercici 7 del Tema 2.
+Realitzar l'esquema relacional corresponent a una empresa de línies ferroviàries
 
 En la de dalt considerem únicament els viatges (i no els trajectes). A més,
 només marquem estació d'origen i de destí d'un viatge.
