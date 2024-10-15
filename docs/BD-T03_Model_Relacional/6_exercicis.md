@@ -70,6 +70,11 @@ es para en un trajecte.
 
 ## ![](icon_activity.gif) Exercici 8
 
+Realitzar l'esquema relacional corresponent a un  sistema d'informació sobre el material informàtic d'una empresa.
+
+![](T2Ex8.png)
+
+<!--
 Es desitja mantenir informació sobre el material informàtic d'una empresa.
 
   * L'empresa té unes quantes xarxes, interconnectades algunes d'elles.
@@ -115,10 +120,18 @@ _**Nota**_
 Observeu com per una banda heu de guardar els permisos dels empleats sobre les
 aplicacions, i per una altra els accessos reals fets pels empleats a les
 aplicacions, i en aquest cas hem de saber des de quin ordinador i la data
-
+-->
 
 ## ![](icon_activity.gif) Exercici 9
 
+Realitzar l'esquema relacional corresponent a un sistema
+d'informació d'una empresa que ven gran varietat de productes. Per a la venda
+d'aquestos productes, disposa d'un conjunt de viatjants que realitzen visites
+als clients oferint els seus productes.
+
+![](T2Ex9.png)
+
+<!--
 Dissenyar el diagrama E-R, i traduir-lo després al relacional, d'un sistema
 d'informació d'una empresa que ven gran varietat de productes. Per a la venda
 d'aquestos productes, disposa d'un conjunt de viatjants que realitzen visites
@@ -150,14 +163,21 @@ El sistema d'informació ha de ser capaç de respondre a consultes com:
 
 ![](T3_6_2.png)
 
-
+-->
 
 ## ![](icon_activity.gif) Exercici 10
 
+Realitzar l'esquema relacional corresponent a un Parc Zoològic que vol guardar informació de les espècies que té, els empleats (cuidadors i guies), i els distints itineraris de visita que ofrereix.
+
+
+![](T2Ex10.png)
+
+<!--
 Fer l'esquema E/R i posteriorment passar-lo a relacional corresponent a un
 Parc Zoològic que vol guardar informació de les espècies que té, els empleats
-(cuidadors i guies), i els distints itineraris de visita que ofrereix. La
-informació està estructurada de la següent manera:
+(cuidadors i guies), i els distints itineraris de visita que ofrereix.
+
+La informació està estructurada de la següent manera:
 
   * Especies: de les espècies ens interessa saber el nom, el nom científic i una descripció general. S'ha de tenir en compte que una espècie pot viure en diferents hàbitats naturals i que un hàbitat pot ser ocupat per diferents espècies. Per una altra banda, les espècies estan en distintes zones del parc de manera que cada espècie està en una zona i en una zona hi ha unes quantes espècies. 
 
@@ -172,7 +192,7 @@ informació està estructurada de la següent manera:
     * Guies: Interessa saber quins guies porten cada itinerari, tenint en compte que un guia pot dur uns quants itineraris i que un itinerari pot ser assignat a més d'un guia en diferents hores. Aquestes hores són una dada d'interès. 
 
     * Cuidadors: s'encarreguen de cuidar les diferents espècies. Un cuidador pot encarregar-se d'unes quantes espècies i una espècie pot ser atesa per uns quants cuidadores. Ens interessa la data en la qual un cuidador es fa càrrec d'una espècie. 
-
+-->
 
 Llicenciat sota la  [Llicència Creative Commons Reconeixement NoComercial
 CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
