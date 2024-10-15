@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema3/BD-T03_Model_Relacional/objectius_i_coneixements_previs/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Objectius i coneixements previs - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Objectius i coneixements previs";
+        var mkdocs_page_input_path = "BD-T03_Model_Relacional/objectius_i_coneixements_previs.md";
+        var mkdocs_page_url = "/BBDD_Tema3/BD-T03_Model_Relacional/objectius_i_coneixements_previs/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 3 Model Relacional</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Objectius i coneixements previs</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_estructura_del_model_relacional/">2. Estructura del Model Relacional</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_restriccions/">3. Restriccions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_tranformaci_del_m_er_al_m_relacional/">4. Tranformació del M. E/R al M. Relacional</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_llenguatges_relacionals/">5. Llenguatges relacionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6_exercicis/">6. Exercicis</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 3 Model Relacional</li>
+      <li class="breadcrumb-item active">Objectius i coneixements previs</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="objectius-i-coneixements-previs">Objectius i coneixements previs</h1>
+<p><strong><img alt="" src="../icon_objectives.gif" /> Objectius</strong></p>
+<p>Els objectius d'aquest tema són:</p>
+<ol>
+<li>
+<p>Conéixer l'estructura bàsica del model: la taula.</p>
+</li>
+<li>
+<p>Saber descriure els camps, amb el seu domini, i saber triar la clau principal.</p>
+</li>
+<li>
+<p>Saber definir altres restriccions (no nul, únic, ...)</p>
+</li>
+<li>
+<p>Entendre el concepte de clau externa, i saber definir les necessàries.</p>
+</li>
+<li>
+<p>Saber traduir correctament del Model Entitat-Relació al Model Relacional.</p>
+</li>
+<li>
+<p>Redefinir les taules necessàries atenent a motius pràctics.</p>
+</li>
+</ol>
+<p><strong><img alt="" src="../icon_preknowledge.gif" /> Coneixements previs</strong></p>
+<p>Els coneixements previs necessaris per al tema són els del tema 2: Model
+Entitat-Relació. En certa manera aquest tema aclarirà conceptes d'aquell tema,
+ja que ens permetrà aplicar-lo a una cosa palpable com són les taules,
+directament implementables en un SGBD Relacional. Així podrem concretar
+possibles ambigüitats del esquema Entitat-Relació, i saber si valen la pena
+determinades restriccions.</p>
+<p>Però entendre el Model Entitat-Relació i dominar la interpretació d'un esquema
+serà bàsic en el disseny d'una Base de Dades. Sempre començarem pel Model
+Entitat-Relació, i posteriorment el traduirem al Model Relacional, aplicant en
+tot cas el sentit comú.</p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../1_introducci/" class="btn btn-neutral float-right" title="1. Introducció">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="../1_introducci/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

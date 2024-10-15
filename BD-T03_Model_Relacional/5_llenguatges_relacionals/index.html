@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema3/BD-T03_Model_Relacional/5_llenguatges_relacionals/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>5. Llenguatges relacionals - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "5. Llenguatges relacionals";
+        var mkdocs_page_input_path = "BD-T03_Model_Relacional/5_llenguatges_relacionals.md";
+        var mkdocs_page_url = "/BBDD_Tema3/BD-T03_Model_Relacional/5_llenguatges_relacionals/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 3 Model Relacional</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_estructura_del_model_relacional/">2. Estructura del Model Relacional</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_restriccions/">3. Restriccions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_tranformaci_del_m_er_al_m_relacional/">4. Tranformació del M. E/R al M. Relacional</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">5. Llenguatges relacionals</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6_exercicis/">6. Exercicis</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 3 Model Relacional</li>
+      <li class="breadcrumb-item active">5. Llenguatges relacionals</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="5-llenguatges-relacionals">5. Llenguatges relacionals</h1>
+<p>Fins el moment hem dissenyat una B.D. Relacional. Però si volem la B.D. és per
+consultar-la, treure la informació que ens interessa, manipular-la. Ens farà
+falta, per tant, un llenguatge de manipulació de la B.D. (<strong>DML</strong>). Aquestos
+llenguatges poden estar basats en l'Àlgebra Relacional o en el Càlcul
+Relacional.</p>
+<ul>
+<li>Per mig de l'<strong>ÀLGEBRA RELACIONAL</strong> farem operacions sobre les taules, combinant-les, seleccionant el que ens importa, ..., en definitiva manipulant-les. El resultat serà una nova taula, que serà el resultat final o servirà per a fer una altra operació. Les operacions poden ser <strong>projecció</strong> (agafar algunes columnes d'una taula), <strong>selecció</strong> (seleccionar algunes files d'una taula, les que acompleixen una determinada condició), <strong>unió</strong> , <strong>intersecció</strong> , <strong>producte cartesià</strong> , <strong>reunió</strong> ...</li>
+</ul>
+<blockquote>
+<p>El llenguatge <strong>SQL</strong> , que és l'estàndard de fet i que veurem en el tema 6,
+està basat en l'Àlgebra relacional. Les sentències són de la forma:</p>
+</blockquote>
+<pre><code>SELECT dni, nom, sou  
+FROM EMPLEAT  
+WHERE sou &gt; 2000
+</code></pre>
+<blockquote>
+<p>on estem projectant sobre els camps dni, nom i sou, i seleccionant les files
+que acompleixen la condició del final</p>
+<p>Anem a comentar dues de les operacions esmentades abans. El <strong>producte
+cartesià</strong> de dues taules consisteix en combinar cadascuna de les files
+d'una taula amb cadascuna de les files de l'altra. Així, el producte
+cartesià de <strong>Empleat</strong> i <strong>Departament</strong> seria:</p>
+</blockquote>
+<pre><code>SELECT dni, nom, nom_d  
+FROM EMPLEAT , DEPARTAMENT
+</code></pre>
+<blockquote>
+<p>Però aquest operació no sembla tenir molt de sentit en aquest cas ¿per a què
+volem combinar un empleat amb tots els departaments de l'empresa? Sembla
+molt més lògic combinar cada empleat únicament amb el departament al qual
+pertany.</p>
+<p>La <strong>reunió</strong> de dues taules consisteix en fer un producte cartesià i
+després seleccionar les files que tenen el mateix valor en dos camps
+determinats (un de cada taula).</p>
+</blockquote>
+<pre><code>SELECT dni, nom, nom_d  
+FROM EMPLEAT , DEPARTAMENT  
+WHERE EMPLEAT.departament = DEPARTAMENT.num_d
+</code></pre>
+<blockquote>
+<p>És a dir, del producte cartesià seleccionem només les files en les quals
+coincideixen els camp departament i num_d, combinant cada empleat amb el seu
+departament.</p>
+</blockquote>
+<ul>
+<li>En el <strong>CÀLCUL RELACIONAL</strong> , es defineixen variables de tipus <strong>taula</strong> , s'utilitzen operadors entre les variables, i també uns quantificadors (<em><strong>per a tot</strong></em> i   <em><strong>existeix</strong></em>). Va de forma paral·lela a l'àlgebra de manera que es poden obtenir les mateixes coses amb l'Àlgebra i amb el Càlcul.</li>
+</ul>
+<blockquote>
+<p>El <strong>QBE</strong> (Query By Example) es basa en el càlcul relacional, i la seua
+particularitat és la senzillesa de fer consultes per als no experts. Per mig
+d'una plantilla podrem col·locar els atributs que volem visualitzar,
+l'ordre, els criteris de selecció, etc. És el que utilitzen tant <strong>Access</strong>
+com <strong>Base</strong> per a fer les consultes amb l'assistent.</p>
+<p><img alt="" src="../T3_5_1.png" /></p>
+</blockquote>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../4_tranformaci_del_m_er_al_m_relacional/" class="btn btn-neutral float-left" title="4. Tranformació del M. E/R al M. Relacional"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../6_exercicis/" class="btn btn-neutral float-right" title="6. Exercicis">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../4_tranformaci_del_m_er_al_m_relacional/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../6_exercicis/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

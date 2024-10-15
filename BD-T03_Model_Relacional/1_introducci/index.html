@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema3/BD-T03_Model_Relacional/1_introducci/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>1. Introducció - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "1. Introducci\u00f3";
+        var mkdocs_page_input_path = "BD-T03_Model_Relacional/1_introducci.md";
+        var mkdocs_page_url = "/BBDD_Tema3/BD-T03_Model_Relacional/1_introducci/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 3 Model Relacional</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1. Introducció</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_estructura_del_model_relacional/">2. Estructura del Model Relacional</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_restriccions/">3. Restriccions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_tranformaci_del_m_er_al_m_relacional/">4. Tranformació del M. E/R al M. Relacional</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_llenguatges_relacionals/">5. Llenguatges relacionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6_exercicis/">6. Exercicis</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 3 Model Relacional</li>
+      <li class="breadcrumb-item active">1. Introducció</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="1-introduccio">1. Introducció</h1>
+<p>En 1970 <strong>E.F. Codd</strong> va introduir la teoria matemàtica de les relacions en el
+camp dels SGBD. El model de dades que va crear s'anomena <strong>MODEL RELACIONAL</strong>
+, amb una base matemàtica (la de les relacions) molt sòlida, on les dades
+s'estructuren en forma de relacions (taules) que són estructures de dades
+simples i uniformes, que permeten una fàcil comprensió.</p>
+<p>En el moment en què va sorgir, els models que funcionaven eren el jeràrquic i
+el de xarxa (també anomenat Codasyl, pel grup de treball que va estandaritzar-
+lo). Com a model els va superar perquè, com va dir el mateix Codd,
+"<em>proporciona un mitjà per a descriure les dades amb la seua estructura
+únicament, sense haver de superposar cap estructura addicional per a
+representar-se en la màquina " </em>(és a dir, sense punters ni històries).</p>
+<p>A pesar d'això va estar uns anys en competència amb aquells, amb molta gent
+molt reticent, ja que els productes comercials que eixien no eren
+suficientment eficients, potser perquè la tecnologia de l'època no ho
+permetia. A partir dels anys 80, quan la tecnologia ho va permetre, van eixir
+productes millors, com per exemple l'<strong>ORACLE</strong> (1979), i aleshores la seua
+implantació va ser aplastant.</p>
+<p>Els objectius del Model Relacional són:</p>
+<ul>
+<li>
+<p><strong>Fidelitat</strong> , per a originar esquemes que representen fidelment la informació (els objectes i relacions entre ells) que existeix en el domini del problema.</p>
+</li>
+<li>
+<p><strong>Independència física</strong>[1], per a que la manera de guardar les dades no influesca en la seua manipulació lògica, i així els usuaris que accedeixen a aquestes dades no hagen de modificar els seus programes per canvis en l'emmagatzematge físic.</p>
+</li>
+<li>
+<p><strong>Independència lògica</strong> , per a que les vistes externes no es vegen afectades per canvis en l'esquema conceptual de la B.D.</p>
+</li>
+<li>
+<p><strong>Flexibilitat</strong> , per a poder oferir les dades a cada usuari de la forma més adequada a la seua aplicació.</p>
+</li>
+<li>
+<p><strong>Uniformitat</strong> , les estructures lògiques de les dades presenten un aspecte simple i uniforme (les taules), cosa que facilita la concepció i manipulació per part dels usuaris.</p>
+</li>
+<li>
+<p><strong>Senzillesa</strong> , les característiques anteriors, unides a uns llenguatges d'usuari senzills, fan que el M. Relacional siga fàcil d'entendre i d'utilitzar per l'usuari final.</p>
+</li>
+</ul>
+<p>Recordeu que les <strong>relacions</strong> del Model Relacional són les <strong>taules</strong>. No són
+el mateix que les relacions del Model Entitat-Relació. Per evitar confusions
+intentarem anomenar-les sempre taules.  </p>
+<hr />
+<p>[1]En realitat tant la independència física com lògica les han intentades aconseguir tots els
+models.</p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../objectius_i_coneixements_previs/" class="btn btn-neutral float-left" title="Objectius i coneixements previs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2_estructura_del_model_relacional/" class="btn btn-neutral float-right" title="2. Estructura del Model Relacional">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../objectius_i_coneixements_previs/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2_estructura_del_model_relacional/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
