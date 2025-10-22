@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema3M/BD-T03_Model_Relacional/3_restriccions/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>3. Restriccions - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "3. Restriccions";
+        var mkdocs_page_input_path = "BD-T03_Model_Relacional/3_restriccions.md";
+        var mkdocs_page_url = "/BBDD_Tema3M/BD-T03_Model_Relacional/3_restriccions/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 3 Model Relacional</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_estructura_del_model_relacional/">2. Estructura del Model Relacional</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">3. Restriccions</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#31-restriccions-inherents">3.1 Restriccions inherents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#32-restriccions-dusuari">3.2 Restriccions d'usuari</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#321-restriccio-de-domini">3.2.1 Restricció de domini</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#322-restriccio-de-clau-principal">3.2.2 Restricció de clau principal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#323-restriccio-dunicitat">3.2.3 Restricció d'unicitat</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#324-restriccio-de-valor-no-nul">3.2.4 Restricció de valor no nul</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#325-integritat-referencial">3.2.5 Integritat referencial</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#326-restriccions-externes">3.2.6 Restriccions externes</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4_tranformaci_del_m_er_al_m_relacional/">4. Tranformació del M. E/R al M. Relacional</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_llenguatges_relacionals/">5. Llenguatges relacionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6_exercicis/">6. Exercicis</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 3 Model Relacional</li>
+      <li class="breadcrumb-item active">3. Restriccions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="3-restriccions">3. Restriccions</h1>
+<p>Igual que en altres models de dades, en el Model Relacional existeixen
+restriccions, és a dir, estructures o ocurrències no permeses.</p>
+<p>Aquestes restriccions poden ser de dos tipus fonamentals: <strong>restriccions
+inherents</strong> , que són imposades pel propi model, i <strong>restriccions d'usuari</strong>
+(també anomenades restriccions <strong>semàntiques</strong>) en les quals és l'usuari qui
+prohibeix, perquè el model li ho permet, determinades circumstàncies per a
+poder definir millor la Base de Dades.</p>
+<h2 id="31-restriccions-inherents">3.1 Restriccions inherents</h2>
+<p>Com hem dit són les que imposa el propi model. Algunes són característiques
+que han d'acomplir les relacions. Per tant no qualsevol taula matemàtica és
+una relació. Podem considerar les següents:</p>
+<ul>
+<li><strong>Valors atòmics</strong> : cada valor de la taula, és a dir, qualsevol valor de qualsevol atribut de qualsevol tupla ha de ser simple, no divisible. Per tant no valen atributs compostos o repetitius.</li>
+</ul>
+<blockquote>
+<p>Així, si considerem <strong>Nom</strong> en la relació <strong>Empleat</strong> com a nom de pila més
+cognoms, no serà divisible (no podré agafar posteriorment el nom de pila per
+una banda i els cognoms per una altra; si ho volguera fer, s'haurien de
+definir els atributs simples <strong>Cognom1</strong> , <strong>Cognom2</strong> i <strong>Nom</strong>).</p>
+<p>Tampoc valen valors repetitius, per exemple un vector de 12 entrades. Queden
+per tant descartats els atributs <strong><em>multivaluats</em></strong>.</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>Tuples distintes</strong> : no poden haver dues tuples iguals. Això és una diferència respecte a les taules matemàtiques on sí que es poden duplicar files. </p>
+</li>
+<li>
+<p><strong>L'ordre de les tuples no és significatiu</strong>. </p>
+</li>
+<li>
+<p><strong>L'ordre dels atributs no és significatiu</strong>. </p>
+</li>
+</ul>
+<h2 id="32-restriccions-dusuari">3.2 Restriccions d'usuari</h2>
+<p>Les anteriors són condicions, imposicions que ens dóna el mateix model.</p>
+<p>Les realment interessants per a nosaltres són les restriccions d'usuari, també
+anomenades restriccions semàntiques, ja que seran condicions que podrem posar
+nosaltres per a que l'esquema de la B.D. explique el millor possible la
+realitat, i evitar possibles errors en les dades.</p>
+<h3 id="321-restriccio-de-domini">3.2.1 Restricció de domini</h3>
+<p>El valor d'un atribut ha de ser un valor atòmic del domini. Definint clarament
+el domini ens assegurem (dins del possible) que l'atribut no puga agafar
+valors incorrectes.</p>
+<p>Per una banda, el domini serà d'un tipus determinat, triat d'una gamma prou
+extensa: enter curt, enter, enter llarg, real, doble precisió, caràcter,
+cadena de caràcters (text), data, hora, ...</p>
+<p>Així, per exemple, definint el <em>Sou</em> com un número real impedirem que per
+error puga agafar el valor 2.<strong>R</strong> 00'00, o que la <em>data de naixement</em> , amb
+domini de tipus data, siga 15-<strong>14</strong> -1958 o <strong>31</strong> -<strong>2</strong> -1958.</p>
+<p>També es podran definir dominis que estiguen en un determinat interval (nota
+d'un examen: 0-10) o d'un tipus enumerat (nota d'avaluació: MD, IN, SUF, BE,
+NOT, EXC).</p>
+<h3 id="322-restriccio-de-clau-principal">3.2.2 Restricció de clau principal</h3>
+<p>Permet declarar un atribut o un conjunt d'atributs com a <strong>CLAU PRINCIPAL</strong> o
+<strong>PRIMÀRIA</strong> (Primary Key). Aquesta clau principal servirà per a identificar
+unívocament cadascuna de les files.</p>
+<p>Com a conseqüència de l'anterior, la clau principal no podrà agafar valors
+nuls ni repetits, ja que en cas contrari no es podria assegurar la
+identificació de les files.</p>
+<p>Aquestes últimes característiques també les podran tenir altres atributs, cosa
+que dóna lloc als tipus de restricció que es veuen en els següents punts.</p>
+<p>Nosaltres sempre definirem una clau principal. Si tenim claus candidates,
+triem una d'elles com a clau principal. Si no en tenim, ens inventem un camp
+que servirà de clau principal (bé un número o bé un codi alfanumèric).</p>
+<p>No és convenient que la clau principal estiga formada per un número excessiu
+de camps. Podríem dir que 3 és el màxim. Si la clau candidata està formada per
+més de 3 camps, o bé triem una altra clau candidata, o bé ens inventem una.</p>
+<p>Ho representarem així:</p>
+<p><code>EMPLEAT (<u>dni</u>, nom, adreça, telèfon, sou, data_n)</code></p>
+<h3 id="323-restriccio-dunicitat">3.2.3 Restricció d'unicitat</h3>
+<p>Si en un camp, o en un conjunt de camps, definim la restricció d'unicitat
+(<strong>UNIQUE</strong>), això obliga a que, en cas de tenir valors el camp, no es puguen
+repetir. Suposem, per exemple, els alumnes d'un Institut. La clau no pot ser
+el DNI, ja que alguns alumnes no en tindran, però en cas de tenir-ne, és clar
+que no es podrà repetir.</p>
+<p>Representarem que un camp és únic, posant <strong>únic</strong> entre parèntesi baix del
+camp. Per exemple, si considerem que el camp nom de la taula EMPLEAT ha de ser
+únic, ho representarem així:</p>
+<p><code>EMPLEAT (<u>dni</u> , nom, adreca, telefon, sou, data_n)
+              (únic)</code></p>
+<h3 id="324-restriccio-de-valor-no-nul">3.2.4 Restricció de valor no nul</h3>
+<p>Obliga a que el camp agafe sempre un valor. Per exemple, el camp <strong>Nom</strong> és un
+bon candidat a ser no nul.</p>
+<p>Ho representarem posant <strong>no nul</strong> entre parèntesi baix del camp.</p>
+<p><code>EMPLEAT <u>dni</u> , nom, adreca, telefon, sou, data_n)
+             (no nul)</code></p>
+<p>Per mig de la representació alternativa, podem marcar amb un punt negre
+davant del camp no nul.</p>
+<p><img alt="" src="../T3_3_2_4_0.png" /></p>
+<h3 id="325-integritat-referencial">3.2.5 Integritat referencial</h3>
+<p>Per poder explicar-la ens recolzarem en un exemple.</p>
+<p><img alt="" src="../T3_2_5_1.png" /></p>
+<p>que es podria traduir en les següents taules:</p>
+<p><img alt="" src="../T3_2_5_2.png" /></p>
+<p>Si en una taula R2 (<strong>Familiar</strong>) tenim un atribut (<strong>dni_emp</strong>) que és clau
+(primària o candidata) d'una altra taula R1 (<strong>Empleat</strong><strong>-- &gt; dni</strong>), tot
+valor d'aquell atribut ha de concordar amb un valor de la clau de R1 (no he de
+poder posar en familiar un Dni que no el tinga cap empleat de l'empresa).
+L'atribut en R2 és, per tant, una <strong>CLAU EXTERNA</strong>.</p>
+<p>Ha de ser impossible posar en <strong>Familiar</strong> el Dni 18.754.321, perquè no està
+en l'altra, i per tant no és un Dni d'un empleat de l'empresa.</p>
+<p>Les relacions R1 i R2 no tenen per què ser distintes, poden ser la mateixa.
+Així, si considerem el supervisor, aquest ha de ser de l'empresa:</p>
+<p><img alt="" src="../T3_2_5_3_2.png" /></p>
+<p>Supervisor és una clau externa, però de la mateixa taula. No tots els SGBD
+permeten una clau externa reflexiva.</p>
+<p>Una manera de representar les claus externes en l'esquema és la següent:</p>
+<p><img alt="" src="../T3_2_5_4_2.png" /></p>
+<p>On el doble subratllat indica una clau externa (que en aquest exemple, a més,
+forma part de la clau principal, però que no sempre serà així) que “apunta” a
+la clau principal de l’altra taula.</p>
+<p>L'altra manera, utilitzant la forma alternativa, serà aquesta, que també és
+molt fàcil d'entendre:</p>
+<p><img alt="" src="../T3_3_2_5_5.png" /></p>
+<p>Açò ens impedirà que introduïm valors no correctes, no existents. ¿Però què
+passarà si esborrem un empleat, o si modifiquem el seu Dni? ¿Què fem amb els
+familiars? Doncs en principi tres podrien ser les accions a realitzar, i
+depenent de la situació particular triaríem una o una altra:</p>
+<ul>
+<li>
+<p>No deixar esborrar-lo o modificar-lo (<strong>NO ACTION</strong>).<br />
+Segurament no és l'opció més adequada per a l'exemple dels empleats i els
+familiars. Però pensem en un altre exemple, amb clients i factures. Què fem si
+s'esborra un client i tenim factures d'ell? Segurament el més adequat serà no
+fer l'acció, és a dir, no esborrar el client (sobretot si les factures estan
+pendentes de cobrar ...).</p>
+</li>
+<li>
+<p>Esborrar també els familiars o canviar-los <strong>en cascada</strong>(<strong>CASCADE</strong>).<br />
+Segurament aquesta és l'opció més adequada per al cas dels familiars, que
+s'eliminen automàticament.</p>
+</li>
+<li>
+<p>Canviar el valor de la clau externa al valor nul o un valor predeterminat (<strong>SET NULL</strong> o <strong>SET DEFAULT</strong>).<br />
+En l'exemple dels familiars no té sentit ja que no ens interessen els
+familiars dels que no són de l'empresa. Però imaginem, per exemple, un
+proveïdor que ens ha proporcionat uns articles. Pel fet de no treballar ja amb
+el proveïdor i llevar-lo de la B.D. no hauríem d'eliminar els articles. Seria
+suficient amb donar un valor nul al proveïdor d'aquest
+article. Observem, però, que aquesta clau externa hauria d'admetre valors nuls. Si no ho permet, millor un valor per defecte.</p>
+</li>
+</ul>
+<p>Hi ha SGBD que fins i tot permeten accions distintes per al cas d'esborrament
+i d'actualització de la clau, com per exemple Access.</p>
+<h3 id="326-restriccions-externes">3.2.6 Restriccions externes</h3>
+<p>A pesar de totes les restriccions anteriors, que normalment els SGBDR
+compleixen, hi ha d'altres que no es poden expressar per mig del Model
+Relacional, i per tant no poden complir directament els SGBDR. Són les
+<strong>restriccions externes a l'esquema relacional</strong>. Estaran normalment les
+heretades dels Model E/R, i hi hauran algunes més que sí que es podien
+expressar en el Model E/R, però no en el Model Relacional. Les veurem en la
+pregunta 4.</p>
+<p>Els SGBDR més avançats, més potents, permetran un tractament a aquestes
+restriccions externes, consistents en executar un procediment definit per
+l'usuari després d'una actualització. Són els <strong>Disparadors</strong>(<strong>TRIGGERS</strong>).
+Aquest concepte és molt potent, ja que dóna una resposta procedimental on es
+pot fer qualsevol cosa.</p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2_estructura_del_model_relacional/" class="btn btn-neutral float-left" title="2. Estructura del Model Relacional"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../4_tranformaci_del_m_er_al_m_relacional/" class="btn btn-neutral float-right" title="4. Tranformació del M. E/R al M. Relacional">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2_estructura_del_model_relacional/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../4_tranformaci_del_m_er_al_m_relacional/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

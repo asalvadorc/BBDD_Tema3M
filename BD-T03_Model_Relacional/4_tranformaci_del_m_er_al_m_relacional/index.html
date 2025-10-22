@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema3M/BD-T03_Model_Relacional/4_tranformaci_del_m_er_al_m_relacional/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>4. Tranformació del M. E/R al M. Relacional - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "4. Tranformaci\u00f3 del M. E/R al M. Relacional";
+        var mkdocs_page_input_path = "BD-T03_Model_Relacional/4_tranformaci_del_m_er_al_m_relacional.md";
+        var mkdocs_page_url = "/BBDD_Tema3M/BD-T03_Model_Relacional/4_tranformaci_del_m_er_al_m_relacional/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Tema 3 Model Relacional</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../objectius_i_coneixements_previs/">Objectius i coneixements previs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../1_introducci/">1. Introducció</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2_estructura_del_model_relacional/">2. Estructura del Model Relacional</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3_restriccions/">3. Restriccions</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">4. Tranformació del M. E/R al M. Relacional</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-entitats">4.1 Entitats</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-relacions-1n">4.2 Relacions 1:N</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-relacions-mn">4.3 Relacions M:N</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#44-relacions-11">4.4 Relacions 1:1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#45-entitats-debils">4.5 Entitats dèbils</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#46-resum-dependencies">4.6 Resum dependències</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#47-relacions-ternaries">4.7 Relacions ternàries</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#48-especialitzacions">4.8 Especialitzacions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#49-restriccions-externes">4.9 Restriccions externes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#410-exemple">4.10 Exemple</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5_llenguatges_relacionals/">5. Llenguatges relacionals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6_exercicis/">6. Exercicis</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 3 Model Relacional</li>
+      <li class="breadcrumb-item active">4. Tranformació del M. E/R al M. Relacional</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="4-tranformacio-del-m-er-al-m-relacional">4. Tranformació del M. E/R al M. Relacional</h1>
+<p>A continuació veurem les regles de transformació de l'esquema en el Model E/R
+al Model Relacional.</p>
+<p>D'aquesta manera continuem el procés de disseny d'una Base de Dades. En el
+Tema 2 hem après a fer l'esquema en el Model Entitat-Relació. Ara el traduirem
+al Model Relacional, i ja es podrà implementar en qualsevol SGBD Relacional.
+Faltaria només el procés de Normalització (tema 4) per acabar de deixar les
+taules perfectament dissenyades. De tota manera les Bases de Dades que
+dissenyem nosaltres, amb el procés descrit anteriorment, tindran unes taules
+molt "normalitzades", sempre que dissenyem bé.</p>
+<h2 id="41-entitats">4.1 Entitats</h2>
+<p>Tota entitat es transformarà en una taula, amb tots els seus atributs, que es
+consideraran com a simples. Es tria un (o un conjunt) com a clau principal, i
+el denotarem subratllant-lo. Les entitats dèbils les estudiarem millor més
+endavant.</p>
+<p>En el nostre exemple, com teníem 4 entitats, ens eixiran de moment 4 taules:</p>
+<p><img alt="" src="../T3_4_1_1.png" /></p>
+<p>No considerarem els atributs multivaluats. Els tractarem i solucionarem en el
+tema següent, el de <strong>Normalització</strong>.</p>
+<h2 id="42-relacions-1n">4.2 Relacions 1:N</h2>
+<p>Per cada relació 1:N entre les entitats <strong>A</strong> i <strong>B</strong> , on <strong>A</strong> és la que
+participa amb grau de cardinalitat 1, i <strong>B</strong> amb grau N, s'inclou un nou camp
+en <strong>B</strong> (del mateix tipus que la clau principal de<strong>A</strong>) que a més serà <strong>clau
+externa</strong> que apuntarà a <strong>A</strong> , més concretament a la clau principal de
+<strong>A</strong>. En moltes ocasions al camp nou de <strong>B</strong> se li posa el mateix nom que a
+la clau principal de <strong>A</strong> , però no és necessari, depén del gust de cadascú.</p>
+<p>També s'inclouran en <strong>B</strong> tots els possibles atributs de la relació.</p>
+<p>La següent animació intenta explicar-ho millor:</p>
+<iframe src="https://slides.com/aliciasalvador/bd-t3-exemple_clau_externa/embed" width="576" height="420" title="Copy of BD-T3-exemple_clau_externa" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><br></br>
+Si a més l'entitat que participa amb grau N ho fa de forma <strong>total</strong> (com en la
+figura de baix), la clau externa <strong>no pot ser nula</strong> (és a dir sempre ha de
+tenir un valor).</p>
+<p><img alt="" src="../T3_4_2_1.png" /></p>
+<p>En l'exemple nostre:</p>
+<ul>
+<li>
+<p>Per la relació <strong><em>Pertany</em></strong> (figura de dalt) inclourem l'atribut <strong>departament</strong> a <strong>Empleat</strong> , que a més haurà de ser no nul.</p>
+</li>
+<li>
+<p>Per la relació <strong><em>Controla</em></strong> inclourem l'atribut <strong>departament</strong> a <strong>Projecte</strong> (no nul).</p>
+</li>
+<li>
+<p>Per la relació <strong><em>Supervisa</em></strong> inclourem l'atribut <strong>supervisor</strong> a <strong>Empleat</strong> (és reflexiva), però aquest sí que pot ser nul. Encara que semble estrany, un camp pot ser clau externa que apunta a la clau principal de la mateixa taula.</p>
+</li>
+<li>
+<p>Per la relació <strong><em>Té</em></strong> entre empleat i familiar, inclourem en <strong>FAMILIAR</strong> l'atribut <strong>dni_e</strong> , però com que Familiar és dèbil la veurem millor un poc més endavant.</p>
+</li>
+</ul>
+<p><img alt="" src="../T3_4_2_2.png" /></p>
+<h2 id="43-relacions-mn">4.3 Relacions M:N</h2>
+<p>Per cada relació <strong>M:N</strong> construirem una <strong>nova taula</strong> on s'inclouran com a
+clau externa les claus principals de les dues entitats, i a més la seua
+combinació constituirà (o formarà part de) la clau principal. Inclourem també
+els possibles atributs de la relació.</p>
+<p>En l'exemple:</p>
+<p><img alt="" src="../T3_4_3_1.png" /></p>
+<p>Cada vegada que ens trobem amb una relació M:N i la traduïm per una nova taula
+haurem de<strong>preguntar-nos si és suficient amb la clau principal</strong> formada per
+les dues claus externes, o si fa falta afegir un altre camp. Hem de ser
+conscients que la clau principal no puga repetir-se, que hi haja 2 files amb
+la mateixa clau principal. Així, en l'exemple, ens hauríem de fer la següent
+pregunta: pot un empleat treballar en el mateix projecte més d'una vegada? En
+aquest cas la contestació és negativa, i per tant és suficient amb aquesta
+clau principal.</p>
+<p>Però suposem que la resposta és que sí que pot treballar més d'una vegada al
+llarg del temps. En aquest cas seria una espècie d'històric, on faria falta, a
+més, saber quan comença i quan acaba de treballar en un projecte un determinat
+treballador (serien atributs de la relació):</p>
+<p><img alt="" src="../T3_4_3_2.png" /></p>
+<p>Aleshores, com no és suficient amb la clau principal formada per les dues
+claus externes, inclourem un altre camp en la clau principal. Sembla que el
+més adequat seria <strong>Data_c</strong> (ja no es pot donar el cas que el mateix
+treballador treballe més d'una vegada en el mateix projecte, començant el
+mateix dia)</p>
+<p><img alt="" src="../T3_4_3_3.png" /></p>
+<p>Però per una altra banda, les claus principals molt llargues no són
+operatives, i encara que la traducció literal siga com hem dit, per motius
+pràctics podem canviar la clau principal. Considerarem que el nombre màxim de
+camps en la clau principal és de 3. 4 ja són massa, i aleshores buscarem una
+altra clau principal (un codi de treball, per exemple). Les claus externes
+continuarien sent-ho.</p>
+<h2 id="44-relacions-11">4.4 Relacions 1:1</h2>
+<p>No hi ha una forma única de traduir aquestes relacions. Tres seran les
+possibles traduccions, segons la participació total o parcial de les entitats
+en la relació, i també segons el que ens diga el "<em>sentit comú</em>".</p>
+<ul>
+<li>Si de les dues entitats que entren la relació, <strong>A</strong> i <strong>B</strong>, una d'elles i només una, participa de forma total, per exemple <strong>B</strong> , traduirem la relació 1:1 com una <strong>clau externa</strong> en la taula corresponent a l'entitat que participa de forma total (<strong>B</strong>). Podem obligar també a que aquest camp que serà clau externa siga <strong>no nul</strong> (ja que totes les ocurrències de <strong>B</strong> entren en la relació). També podem fer que aquest camp siga <strong>únic</strong> (no es podrà repetir, ja que si es puguera repetir seria una relació 1:N). A més, inclourem en <strong>B</strong> tots els possibles atributs de la relació. </li>
+</ul>
+<blockquote>
+<p>Per exemple, la relació <strong><em>dirigeix</em></strong> , que és 1:1 entre <strong>EMPLEAT</strong> i
+<strong>DEPARTAMENT</strong> :</p>
+<p><img alt="" src="../T3_4_4_1.png" /><br />
+</p>
+<p>Com que l'entitat de la dreta participa de forma total, triarem
+<strong>DEPARTAMENT</strong> :</p>
+<p><img alt="" src="../T3_4_4_2.png" /><br />
+</p>
+<p>Ho fem d'aquesta manera perquè tots els departaments tenen director, però no
+tots els empleats són directors. Si posàrem la clau externa en la taula
+<strong>EMPLEAT</strong>(s'anomenaria per exemple <strong>dep_que_dirigeix</strong>) moltes vegades
+estaria buit, ja que relativament són pocs els empleats que dirigeixen un
+departament.</p>
+<p>Vegem un altre exemple de relació 1:1, el de les papallones. Teníem una
+relació 1:1 entre <strong>PERSONA</strong> i <strong>COL·LECCIÓ</strong></p>
+<p><img alt="" src="../T3_4_4_3.png" /><br />
+</p>
+<p>Triaríem <strong>COL·LECCIÓ</strong> , ja que entra de forma plena o total en la relació.</p>
+<p><img alt="" src="../T3_4_4_4.png" /><br />
+</p>
+</blockquote>
+<ul>
+<li>Si les dues entitats participen de forma total, es pot considerar tot (les dues entitats i la relació, amb els seus possibles atributs) com una sola taula. En la pràctica això serà prou estrany, perquè ja ho hauríem considerat una sola entitat. Per exemple, considerem que totes les persones que estudiem tenen una col·lecció: </li>
+</ul>
+<blockquote>
+<p><img alt="" src="../T3_4_4_5.png" /><br />
+</p>
+<p>Aleshores podríem considerar una única taula, que continga les dades de la
+persona i de la seua col·lecció:</p>
+<p><img alt="" src="../T3_4_4_6.png" /><br />
+</p>
+<p>De tota manera, pot ser ens interesse (per separar clarament els dos tipus
+d'informació) dues taules. Aleshores podríem traduir-lo com en el primer
+punt, amb una clau externa (no nula) en una de les dues taules, i hauríem de
+triar la taula que <em>menys</em> s'utilitze.</p>
+</blockquote>
+<ul>
+<li>Si les dues entitats participen de forma parcial, com que si posem una clau externa en una de les dues, moltes vegades tindrà valor nul, podem traduir-la com una nova taula que marque la relació, on hi haurà una tupla per cada relació entre dues ocurrències. Inclouríem en la nova taula els possibles atributs de la relació. </li>
+</ul>
+<blockquote>
+<p>En l'exemple podria ser que les col·leccions pertanyen a una persona
+particular o a una institució (no tenen propietari):</p>
+<p><img alt="" src="../T3_4_4_7.png" /></p>
+<p>Quedaria:</p>
+<p><img alt="" src="../T3_4_4_8.png" /></p>
+<p>Però com comentàvem al principi, haurem d'aplicar el sentit comú, ja que
+potser una de les dues podria participar de forma "quasi" total (per
+exemple, quasi totes les col·leccions són d'una persona). Aleshores podria
+ser millor traduir-lo com en el primer cas, posant la clau externa en la que
+participa de forma "quasi" total, ja que aquesta tindrà relativament pocs
+valors nuls, i seria més costós mantenir una altra taula. Evidentment la
+clau externa sí que podria ser nula, en aquest cas.</p>
+</blockquote>
+<p>Resumint, <strong>una relació 1:1 quasi sempre la traduirem com una clau externa en
+la taula que participa en la relació de forma total o quasi total</strong> (o la que
+previsiblement té més ocurrències en la relació)</p>
+<h2 id="45-entitats-debils">4.5 Entitats dèbils</h2>
+<p>Les entitats dèbils, com que com a mínim depenen d'una altra, podrem ser més
+restrictius que les altres. Una entitat sempre és dèbil a través, com a mínim,
+d'una relació que la comunica amb l'entitat principal. A més participa de
+forma total (com que no pot existir sense l'altra, tota ocurrència està en la
+relació).</p>
+<p>Per tant, tota entitat dèbil tindrà una clau externa, que apunta a la
+principal i serà no nula. Però encara podem anar més enllà:</p>
+<ul>
+<li>
+<p><strong>Dependència en existència</strong> : farem que la clau externa <strong>esborre i actualitze en cascada</strong> , ja que si deixa d'existir la principal no té sentit la dèbil.</p>
+</li>
+<li>
+<p><strong>Dependència en identificació</strong> : a més d'esborrar i actualitzar en cascada, la clau externa <strong>formarà part de la clau principal</strong>.</p>
+</li>
+</ul>
+<blockquote>
+<p>Si la relació per la qual depèn en identificació és 1:N, farà falta un altre
+camp en la clau principal.</p>
+<p>Si és 1:1, amb la clau externa és suficient com a clau principal</p>
+</blockquote>
+<p>En nostre exemple quedarà així:</p>
+<p><img alt="" src="../T3_4_5_1.png" /></p>
+<h2 id="46-resum-dependencies">4.6 Resum dependències</h2>
+<p>Anem a fer un quadre resum amb distints graus de dependència entre dues
+relacions i com es traduiria al Model Relacional:</p>
+<p><img alt="" src="../T3_4_6_1.png" /></p>
+<p>Per una altra banda, si ens trobem una entitat dèbil que depèn en
+identificació a través d'una relació 1:1, és suficient amb la clau principal
+de A com a clau principal de B</p>
+<p><img alt="" src="../T3_4_6_2.png" /></p>
+<p>Una altra qüestió que pot dur a confusió és el cas de les claus externes
+formades per 2 camps. Ens basarem en l'exemple de sempre, en la taula
+FAMILIAR, ja que té una clau principal formada per 2 camps. Suposem que hi ha
+en el Model Entitat-Relació una taula que depèn d'ella, com podria ser
+comunicacions que se li han fet (cartes). Les entitats i la relació entre
+elles podria ser aquesta:</p>
+<p><img alt="" src="../T3_4_6_3.png" /></p>
+<p>Com que la relació és de tipus 1:N la traduirem per una clau externa en
+CARTES. I quina serà la clau externa? Com que la taula FAMILIAR té una clau
+principal formada per 2 camps, haurem de posar una clau externa formada per 2
+camps. Alerta! no seran 2 claus externes, sinó una clau externa formada per 2
+camps. Com sempre, representarem la clau externa amb un doble subratllat, que
+ara agafarà als 2 camps.</p>
+<p><img alt="" src="../T3_4_6_4.png" /></p>
+<h2 id="47-relacions-ternaries">4.7 Relacions ternàries</h2>
+<p>En una relació ternària o superior construirem una nova taula, on inclourem
+com a claus externes les claus primàries de totes les entitats, i a més els
+atributs de la relació.</p>
+<p>Habitualment, la clau principal de la nova taula serà la combinació de totes
+les claus principals de les entitats. Ocasionalment, si alguna entitat
+participa amb cardinalitat 1, la clau principal d'aquesta entitat no entraria
+a formar part de la clau principal de la nova taula.</p>
+<p>Igual que en el cas de les relacions M:N, ens haurem de preguntar si és
+suficient amb la clau primària generada o si s'haurà d'incloure algun altre
+camp.</p>
+<p>En l'exemple que vam posar de relació ternària, suposant els atributs de la
+relació la data de compra i la quantitat:</p>
+<p><img alt="" src="../T3_4_7_1.png" /></p>
+<p><img alt="" src="../T3_4_7_2.png" /></p>
+<p>On hem posat totes les claus externes formant part de la clau principal, ja
+que totes entren amb cardinalitat N. Però no teníem prou amb aquesta clau
+principal, ja que el mateix departament pot comprar el mateix article al
+mateix proveïdor més d'una vegada. Com no teníem prou, hem posat un altre
+camp.</p>
+<p>Seria moment, segurament, de substituir la clau principal que està formada per
+4 camps, ja que en són massa.</p>
+<p>Posaríem una altra clau principal, però les claus externes continuarien sent-
+ho, i a més serien no nules:</p>
+<p><img alt="" src="../T3_4_7_3.png" /></p>
+<h2 id="48-especialitzacions">4.8 Especialitzacions</h2>
+<p>Aquest aspecte, com en el cas de les relacions 1:1, també té múltiples
+solucions. El problema de les especialitzacions és que, encara que de forma
+teòrica la solució siga correcta, en la pràctica suposa moltes taules i amb un
+cert grau de manteniment entre elles. Per tant, i aplicant el sentit comú,
+moltes vegades es fa una simplificació, llevant bé les subclasses, bé la
+superclasse, com veurem a continuació. Aquestes són les possibilitats:</p>
+<ul>
+<li>Transformar les especialitzacions en taules amb la clau principal heretada i els atributs específics (com si substituírem l'especialització en relacions 1:1, amb les subclasses depenent en identificació de la superclasse). Estaria també bé afegir un atribut a la superclasse per a poder saber de quin tipus és. En l'exemple ens quedaria:</li>
+</ul>
+<p><img alt="" src="../T3_4_8_1.png" /></p>
+<ul>
+<li>Simplificar les subclasses. Aleshores tots els atributs d'aquestes haurien de passar a la superclasse. També s'haurien de passar totes les relacions que afecten a les subclasses, "retocant" les participacions totals (que ara ja no ho serien). Ara serà obligatori tenir el camp que distingeix el tipus (sinó, perdríem aquesta informació).</li>
+</ul>
+<p><img alt="" src="../T3_4_8_2.png" /></p>
+<ul>
+<li>Simplificar la superclasse. Aleshores tots els atributs d'aquesta passarien a cadascuna de les subclasses. També passarien les relacions a cadascuna d'aquestes, "retocant" les participacions totals.</li>
+</ul>
+<p><img alt="" src="../T3_4_8_3.png" /></p>
+<h2 id="49-restriccions-externes">4.9 Restriccions externes</h2>
+<p>Ja hem comentat que restriccions externes són restriccions que no es poden
+expressar per mig del model de dades. Aleshores les expressarem de paraula.</p>
+<p>Normalment, les restriccions externes del Model E/R continuaran sent-ho en el
+Model Relacional, perquè tampoc es podran expressar. En el nostre exemple
+teníem les restriccions externes del Model E/R:</p>
+<blockquote>
+<p><strong>Rex1</strong> : El cap d'un departament ha de ser membre d'aquest.</p>
+<p><strong>Rex2</strong> : Un empleat només pot treballar en projectes coordinats pel seu
+departament.</p>
+</blockquote>
+<p>Açò tampoc es pot expressar amb el Model Relacional, per tant les mantindrem.</p>
+<p>A banda, es poden crear més restriccions externes, perquè amb el Model
+Relacional no es pot expressar tot el que es podia expressar amb el Model E/R.
+Per exemple, en la relació:</p>
+<p><img alt="" src="../T3_4_9_1.png" /></p>
+<p>ja hem comentat que donarà lloc, a banda de les taules de les entitats, a una
+altra taula:</p>
+<p><img alt="" src="../T3_4_9_2.png" /></p>
+<p>on <strong>dni</strong> i <strong>num_p</strong> són claus externes. Però l'entitat projecte participa
+de forma total en la relació, és a dir, en tot projecte ha d'haver un empleat
+treballant. ¿Com ho controlem això? Doncs és una nova restricció externa que
+la podríem formular així:</p>
+<blockquote>
+<p><strong>RexR3</strong> : Tot projecte ha de tenir com a mínim un empleat treballant-hi.</p>
+</blockquote>
+<p>Les participacions totals que ens suposaran una restricció externa són:</p>
+<ul>
+<li>
+<p>En una relació <strong>1:N</strong> , una participació total de l'entitat que participa amb grau 1.</p>
+</li>
+<li>
+<p>En una relació <strong>M:N</strong> , qualsevol participació total (si les dues participen de forma total, aleshores hi haurà dues restriccions externes).</p>
+</li>
+<li>
+<p>En una relació <strong>1:1</strong> , depèn de la manera de traduir-se.</p>
+</li>
+</ul>
+<p>La manera d'implementar les restriccions externes serà per mig d'un TRIGGER,
+que s'active quan hi haja una actualització (inserció, modificació o esborrat)
+que afecte a la restricció externa. Per exemple, en la restricció <strong>RexR3</strong>
+els moments importants són després d'inserir un nou projecte, i abans
+d'eliminar o modificar en la taula <strong>Treballa</strong> (per si un projecte es queda
+sense gent treballant en ell).</p>
+<p>Les accions a desenvolupar podrien ser traure un avís, o obligar a inserir com
+a mínim una tupla en la taula <strong>Treballa</strong> , en el cas de la inserció d'un nou
+projecte; en el cas de modificació o eliminació en <strong>Treballa</strong> podria
+impedir-se aquesta actualització.</p>
+<p>En el nostre exemple tindrem les restriccions externes al Model Relacional:</p>
+<blockquote>
+<p><strong>RexR1</strong> : El cap d'un departament ha de ser membre d'aquest.</p>
+<p><strong>RexR2</strong> : Un empleat només pot treballar en projectes coordinats pel seu
+departament.</p>
+<p><strong>RexR3</strong> : Tot projecte ha de tenir com a mínim un empleat treballant-hi.</p>
+</blockquote>
+<h2 id="410-exemple">4.10 Exemple</h2>
+<p>Anem a veure com quedarà definitivament la traducció de l'exemple que estem
+arrastrant des del Tema 2. Donarem 2 versions, tenint en compte o no
+l'especialització de que el treballador pot ser cap o treballador normal.</p>
+<p>Sense tenir en compte l'especialització tindrem aquesta solució:</p>
+<p><img alt="" src="../T3_4_10_1.png" /></p>
+<p>aquest vídeo explica tot el procés pas a pas:</p>
+<iframe src="https://slides.com/aliciasalvador/bd-t3-video_exemple_er_rel/embed" width="600" height="500" title="Copy of BD-T3-video_exemple_er_rel" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p>I aquesta seria la forma alternativa de representar-lo:</p>
+<p><img alt="" src="../T3_4_10_1_5.png" /></p>
+<p>I tenint en compte l'especialització:</p>
+<p><img alt="" src="../T3_4_10_2.png" /></p>
+<p>que aquest vídeo explica en els punts diferents a l'anterior solució</p>
+<iframe src="https://slides.com/aliciasalvador/bd-t3-video_exemple_er_rel_esp/embed" width="600" height="500" title="Copy of BD-T3-video_exemple_er_rel_esp" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p>I ací tindríem la representació alternativa:</p>
+<p><img alt="" src="../T3_4_10_2_5.png" /></p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../3_restriccions/" class="btn btn-neutral float-left" title="3. Restriccions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../5_llenguatges_relacionals/" class="btn btn-neutral float-right" title="5. Llenguatges relacionals">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../3_restriccions/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../5_llenguatges_relacionals/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
